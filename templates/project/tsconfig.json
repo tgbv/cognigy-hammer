@@ -1,0 +1,21 @@
+{
+	"compileOnSave": true,
+	"compilerOptions": {
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"target": "ES2022",
+		"module": "CommonJS",
+		"rootDir": "src",
+		"outDir": "build",
+		"sourceMap": false,
+		"moduleResolution": "node",
+		"strictNullChecks": true,
+		"esModuleInterop": true,
+	},
+	"include": [
+		"./src/**/*"
+	],
+	"exclude": [
+		"./src/**/*.test.ts"
+	]
+}

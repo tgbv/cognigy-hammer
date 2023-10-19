@@ -1,0 +1,49 @@
+{
+  "type": "commonjs",
+  "name": "cognigy-hammer",
+  "version": "0.1.20",
+  "license": "MIT",
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "files": [
+    "build",
+    "src",
+    "templates",
+    "jest.config.js",
+    "package-lock.json",
+    "package.json"
+  ],
+  "engines": {
+    "node": "18.x.x",
+    "npm": "9.x.x"
+  },
+  "scripts": {
+    "create:scaffold": "npx ts-node ./src/commands/create:scaffold.ts",
+    "create:node": "npx ts-node ./src/commands/create:node.ts",
+    "create:connection": "npx ts-node ./src/commands/create:connection.ts",
+    "delete:node": "npx ts-node ./src/commands/delete:node.ts",
+    "transpile": "npx jest --coverage --passWithNoTests ./src && npx tsc",
+    "local:build": "npm run transpile && npm pack && npm i --global cognigy-hammer-*"
+  },
+  "bin": {
+    "ch.create-scaffold": "./build/commands/create:scaffold.js",
+    "ch.create-project": "./build/commands/create:scaffold.js",
+    "ch.create-extension": "./build/commands/create:scaffold.js",
+    "ch.create-connection": "./build/commands/create:connection.js",
+    "ch.create-node": "./build/commands/create:node.js",
+    "ch.delete-node": "./build/commands/delete:node.js"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.5",
+    "@types/node": "^20.8.6",
+    "@types/prompts": "^2.4.5",
+    "ts-jest": "^29.1.1"
+  },
+  "dependencies": {
+    "@cognigy/extension-tools": "^0.15.1",
+    "node-console-colors": "^1.1.5",
+    "detect-ts-node": "^1.0.5",
+    "handlebars": "^4.7.8",
+    "prompts": "^2.4.2"
+  }
+}

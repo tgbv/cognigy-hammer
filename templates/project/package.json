@@ -1,0 +1,36 @@
+{
+  "isCognigyExtension": true,
+  "name": "{{{ PKG_NAME }}}",
+  "version": "{{{ PKG_VERSION }}}",
+  "description": "{{{ PKG_DESCRIPTION }}}",
+  "main": "build/index.js",
+  "scripts": {
+    "transpile": "tsc -p .",
+    "lint": "npx tslint --fix -c tslint.json src/**/*.ts",
+    "zip": "tar cfz {{{ PKG_NAME }}}.tar.gz build/* package.json package-lock.json README.md icon.png",
+    "local:run": "npx ts-node ./src/index.ts",
+    "build:copy:assets": "cp -r src/assets build/assets",
+    "build": "npm run local:run && npx jest ./src && rm -rf ./build && npm run transpile && npm run build:copy:assets && node ./build/index.js && npm run zip"
+  },
+  "keywords": [
+    {{{ PKG_KEYWORDS }}}
+  ],
+  "author": "{{{ PKG_AUTHOR }}}",
+  "license": "{{{ PKG_LICENSE }}}",
+  "private": true,
+  "engines": {
+    "node": "18.x.x",
+    "npm": "9.x.x"
+  },
+  "dependencies": {
+    "@cognigy/extension-tools": "^0.15.1",
+    "cognigy-hammer": "latest"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.1.1",
+    "@types/node": "^13.13.15",
+    "ts-jest": "^29.0.3",
+    "tslint": "^6.1.3",
+    "typescript": "^4.8.4"
+  }
+}
