@@ -7,7 +7,7 @@
   "scripts": {
     "transpile": "tsc -p .",
     "zip": "tar cfz {{{ PKG_NAME }}}.tar.gz build/* package.json package-lock.json README.md icon.png",
-    "local:run": "rm ./src/assets/extension-map.js && npx ts-node ./src/index.ts",
+    "local:run": "rm -f ./src/assets/extension-map.js && npx ts-node ./src/index.ts",
     "build:copy:assets": "cp -r src/assets build/assets",
     "build": "npm run local:run && npx jest ./src && rm -rf ./build && npm run transpile && npm run build:copy:assets && node ./build/index.js && npm run zip"
   },
