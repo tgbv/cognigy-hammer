@@ -6,9 +6,9 @@ Project seeks to eliminate the need of managing nodes dependencies and establish
 
 ## Live examples
 
-<img src="./demos/create-extension.demo.gif">
-<img src="./demos/create-node.demo.gif">
-<img src="./demos/delete-node.demo.gif">
+<img src="https://raw.githubusercontent.com/tgbv/cognigy-hammer/main/demos/create-extension.demo.gif">
+<img src="https://raw.githubusercontent.com/tgbv/cognigy-hammer/main/demos/create-node.demo.gif">
+<img src="https://raw.githubusercontent.com/tgbv/cognigy-hammer/main/demos/delete-node.demo.gif">
 
 ## Prerequisites:
 
@@ -71,6 +71,6 @@ src
 - One parent node can have N child nodes.
 - One parent node must not share its children nodes with other parent nodes. While CognigyAI chart supports this variant and other mixed ones, a custom implementation and/or directory scheme is required from development side for it, which is not in the scope of this package.
 
-<img src="./diagrams//nodes.drawio.png">
+<img src="https://raw.githubusercontent.com/tgbv/cognigy-hammer/main/diagrams//nodes.drawio.png">
 
 <i>In above example, Parent1 and Parent2 cannot share the same Child2.</i>
