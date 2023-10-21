@@ -6,11 +6,14 @@ Project seeks to eliminate the need of managing nodes dependencies and establish
 
 ## Live examples
 
-<< gifs here >>
+<img src="./demos/create-extension.demo.gif">
+<img src="./demos/create-node.demo.gif">
+<img src="./demos/delete-node.demo.gif">
 
 ## Prerequisites:
 
 - UNIX based OS
+- GIT
 - Node >= 18
 - NPM >= 9
 
@@ -54,7 +57,6 @@ src
 │   └── dbs
 │       ├── Mongo.ts
 │       └── MySQL.ts
-├── index.ts
 └── nodes
     ├── Parent
     │   ├── Child1.ts
