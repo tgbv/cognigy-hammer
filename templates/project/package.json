@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "@cognigy/extension-tools": "^0.15.1",
-    "cognigy-hammer": "latest"
+    "cognigy-hammer": "^0.4.0"
   },
   "devDependencies": {
     "@types/jest": "^29.1.1",
