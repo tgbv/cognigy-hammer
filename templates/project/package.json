@@ -22,7 +22,6 @@
     "npm": "9.x.x"
   },
   "dependencies": {
-    "@cognigy/extension-tools": "^0.15.1",
     "cognigy-hammer": "^0.4.0"
   },
   "devDependencies": {
