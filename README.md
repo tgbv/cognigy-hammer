@@ -32,7 +32,7 @@ npm i -g cognigy-hammer
 
 ## CLI commands
 
-The following commands should be available after installing the extension globally. If they are not, you may need to use `npm exec` / `npx`
+The following commands should be available after installing the package globally. If they are not, you may need to use `npm exec` / `npx`
 ```bash
 ch.create-project   # create a new extension project scaffold
 ch.create-node      # create a new node in an extension project
