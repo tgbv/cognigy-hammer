@@ -12,8 +12,8 @@ Project seeks to eliminate the need of managing nodes dependencies and establish
 
 ## Prerequisites:
 
-- UNIX based OS
-- GIT
+- Linux/macOS
+- Git
 - Node >= 18
 - NPM >= 9
 
@@ -74,3 +74,7 @@ src
 <img src="https://raw.githubusercontent.com/tgbv/cognigy-hammer/main/diagrams//nodes.drawio.png">
 
 <i>In above example, Parent1 and Parent2 cannot share the same Child2.</i>
+
+### Demo project
+
+https://github.com/tgbv/cognigy-reddit-explorer

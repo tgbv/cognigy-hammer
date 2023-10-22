@@ -1,11 +1,12 @@
 import { INodeFunctionBaseParams } from "@cognigy/extension-tools";
 import { createNodeDescriptor, setNextNode } from "cognigy-hammer";
 
+// auto-generated
 // do not modify
 const descriptor = createNodeDescriptor(__filename);
 
-descriptor.summary = '{{ NODE_TYPE }} summary';
 descriptor.defaultLabel = '{{ NODE_TYPE }} label';
+descriptor.summary = '{{ NODE_TYPE }} summary';
 
 descriptor.constraints = {
   placement: {},

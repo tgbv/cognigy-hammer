@@ -2,7 +2,7 @@
   "type": "commonjs",
   "name": "cognigy-hammer",
   "description": "An extension development suite for CognigyAI.",
-  "version": "0.4.4",
+  "version": "0.4.5",
   "license": "MIT",
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
