@@ -34,3 +34,7 @@ descriptor.function = async (funcParams: INodeFunctionBaseParams) => {
 };
 
 export default descriptor;
+{{#if isChildNode}}
+export const {{ NODE_TYPE }}Node = descriptor;
+{{/if}}
+

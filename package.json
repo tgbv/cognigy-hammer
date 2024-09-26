@@ -2,7 +2,7 @@
   "type": "commonjs",
   "name": "cognigy-hammer",
   "description": "An extension development suite for CognigyAI.",
-  "version": "0.4.5",
+  "version": "0.5.0",
   "license": "MIT",
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
@@ -24,8 +24,8 @@
     "LICENSE"
   ],
   "engines": {
-    "node": "18.x.x",
-    "npm": "9.x.x"
+    "node": ">=18",
+    "npm": ">=9"
   },
   "scripts": {
     "create:scaffold": "npx ts-node ./src/commands/create:scaffold.ts",

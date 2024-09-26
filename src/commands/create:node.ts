@@ -12,7 +12,8 @@ import { cwdIsInExtensionProject, fileIsNode, scanDirForFiles } from "../lib";
 type TNodeTemplate = {
   NODE_TYPE: INodeDescriptor["type"],
   NODE_CONSTRAINT_CREATEABLE: INodeConstraints["creatable"],
-  NODE_APPEARANCE_VARIANT: INodeAppearance["variant"]
+  NODE_APPEARANCE_VARIANT: INodeAppearance["variant"],
+  isChildNode?: boolean
 }
 
 function nodeExists(nodeName: string): boolean {
@@ -87,7 +88,8 @@ function nodeExists(nodeName: string): boolean {
       const finalNodeSourceCode = nodeTemplate({ 
         NODE_TYPE: nodeNameNaked,
         NODE_CONSTRAINT_CREATEABLE: false,
-        NODE_APPEARANCE_VARIANT: 'mini'
+        NODE_APPEARANCE_VARIANT: 'mini',
+        isChildNode: true
       });
       writeFileSync(`${tPath}/${nodeNameNaked}.ts`, finalNodeSourceCode);
       console.log(cc.set('fg_green', `Node '${tPath}/${nodeNameNaked}.ts' has been created.`));
