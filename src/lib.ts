@@ -42,3 +42,12 @@ export function cwdIsInExtensionProject(): boolean {
   return existsSync('./package.json') && 
     JSON.parse(readFileSync('./package.json').toString()).isCognigyExtension
 }
+
+/**
+ * 
+ * @param input 
+ * @returns 
+ */
+export function ucFirst(input: string): string {
+  return input[0].toUpperCase() + input.slice(1);
+}

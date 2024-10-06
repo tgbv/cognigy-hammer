@@ -20,7 +20,9 @@ Project seeks to eliminate the need of managing nodes dependencies and establish
 ## Setup
 
 ```bash
-npm i -g cognigy-hammer
+$ npm i -g cognigy-hammer
+
+$ cognigy-hammer create scaffold
 ```
 
 ## Features
@@ -30,14 +32,21 @@ npm i -g cognigy-hammer
 - Connections and Nodes are imported automatically.
 - Helper function for setting the next node.
 
-## CLI commands
+## CLI overview
 
-The following commands should be available after installing the package globally. If they are not, you may need to use `npm exec` / `npx`
 ```bash
-ch.create-project   # create a new extension project scaffold
-ch.create-node      # create a new node in an extension project
-ch.delete-node      # delete a node from an extension project
-ch.create-connection # create a new connection in an extension project
+Usage: cognigy-hammer [options] [command]
+
+An extension development suite for CognigyAI.
+
+Options:
+  -V, --version    output the version number
+  -h, --help       display help for command
+
+Commands:
+  create <entity>  Guided way to create a new entity.
+  delete <entity>  Guided way to delete an existing entity.
+  help [command]   display help for command
 ```
 
 ## Standard

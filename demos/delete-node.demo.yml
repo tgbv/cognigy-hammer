@@ -9,7 +9,7 @@ config:
   
   # Specify the current working directory path
   # the default is the current working directory path
-  cwd: /home/user/Documents/ext
+  cwd: /home/default/code/extension
   
   # Export additional ENV variables
   env:
@@ -18,12 +18,12 @@ config:
   # Explicitly set the number of columns
   # or use `auto` to take the current
   # number of columns of your shell
-  cols: 141
+  cols: 116
   
   # Explicitly set the number of rows
   # or use `auto` to take the current
   # number of rows of your shell
-  rows: 21
+  rows: 20
   
   # Amount of times to repeat GIF
   # If value is -1, play once
@@ -50,7 +50,7 @@ config:
   # Don't forget to add a backgroundColor style with a null as type
   frameBox:
     type: floating
-    title: ch.delete-node
+    title: delete node
     style:
       border: 0px black solid
       # boxShadow: none
@@ -111,67 +111,141 @@ config:
   
 # Records, feel free to edit them
 records:
-  - delay: 1
-    content: "\e"
-  - delay: 377
-    content: "\e[?2004h\e]0;user@IdeapadGaming: ~/Documents/ext\a\e[01;32muser@IdeapadGaming\e[00m:\e[01;34m~/Documents/ext\e[00m$ "
-  - delay: 1531
+  - delay: 344
+    content: "$ "
+  - delay: 561
     content: c
-  - delay: 112
+  - delay: 120
+    content: o
+  - delay: 612
+    content: g
+  - delay: 123
+    content: 'n'
+  - delay: 192
+    content: i
+  - delay: 97
+    content: g
+  - delay: 288
+    content: 'y'
+  - delay: 280
+    content: '-'
+  - delay: 320
     content: h
-  - delay: 240
-    content: .
-  - delay: 216
-    content: d
-  - delay: 160
+  - delay: 112
+    content: a
+  - delay: 136
+    content: m
+  - delay: 96
+    content: m
+  - delay: 96
     content: e
-  - delay: 72
+  - delay: 71
+    content: r
+  - delay: 88
+    content: ' '
+  - delay: 280
+    content: d
+  - delay: 129
+    content: e
+  - delay: 168
     content: l
   - delay: 96
     content: e
-  - delay: 138
-    content: 'te-node '
-  - delay: 566
-    content: "\r\n\e[?2004l\r"
-  - delay: 47
-    content: "\e[?25l\e[36m?\e[39m \e[1mPick a node you want to delete\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent\e[39m\e[24m\e[90m\e[39m\r\n    Parent/Child1\e[90m\e[39m\r\n    Parent/Child2\e[90m\e[39m\r\n    Parent/Child2/Child3\e[90m\e[39m\r\n"
-  - delay: 1251
-    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[36m?\e[39m \e[1mPick a node you want to delete\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n    Parent\e[90m\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent/Child1\e[39m\e[24m\e[90m\e[39m\r\n    Parent/Child2\e[90m\e[39m\r\n    Parent/Child2/Child3\e[90m\e[39m\r\n"
-  - delay: 110
-    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[36m?\e[39m \e[1mPick a node you want to delete\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n    Parent\e[90m\e[39m\r\n    Parent/Child1\e[90m\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent/Child2\e[39m\e[24m\e[90m\e[39m\r\n    Parent/Child2/Child3\e[90m\e[39m\r\n"
+  - delay: 143
+    content: t
+  - delay: 55
+    content: e
+  - delay: 99
+    content: ' '
+  - delay: 118
+    content: 'n'
+  - delay: 312
+    content: d
+  - delay: 273
+    content: "\b\e[K"
   - delay: 127
-    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[36m?\e[39m \e[1mPick a node you want to delete\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n    Parent\e[90m\e[39m\r\n    Parent/Child1\e[90m\e[39m\r\n    Parent/Child2\e[90m\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent/Child2/Child3\e[39m\e[24m\e[90m\e[39m\r\n"
-  - delay: 712
-    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[36m?\e[39m \e[1mPick a node you want to delete\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n    Parent\e[90m\e[39m\r\n    Parent/Child1\e[90m\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent/Child2\e[39m\e[24m\e[90m\e[39m\r\n    Parent/Child2/Child3\e[90m\e[39m\r\n"
-  - delay: 832
-    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m✔\e[39m \e[1mPick a node you want to delete\e[22m \e[90m›\e[39m Parent/Child2\r\n\e[?25h\e[?25l\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;33mAre you sure you want to delete node Parent/Child2 and its children?\e[0m\e[22m \e[90m›\e[39m \e[36m\e[4mno\e[39m\e[24m \e[90m/\e[39m yes"
-  - delay: 719
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;33mAre you sure you want to delete node Parent/Child2 and its children?\e[0m\e[22m \e[90m›\e[39m no \e[90m/\e[39m \e[36m\e[4myes\e[39m\e[24m"
-  - delay: 744
-    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1m\e[1;33mAre you sure you want to delete node Parent/Child2 and its children?\e[0m\e[22m \e[90m…\e[39m no \e[90m/\e[39m \e[36m\e[4myes\e[39m\e[24m\r\n\e[?25h"
-  - delay: 19
-    content: "\e[1;32minfo: Deleted node Parent/Child2 and it's children!\e[0m\r\n\e[?2004h\e]0;user@IdeapadGaming: ~/Documents/ext\a\e[01;32muser@IdeapadGaming\e[00m:\e[01;34m~/Documents/ext\e[00m$ "
-  - delay: 905
-    content: 'ch.delete-node '
-  - delay: 641
+    content: o
+  - delay: 88
+    content: d
+  - delay: 47
+    content: e
+  - delay: 297
     content: "\r\n\e[?2004l\r"
-  - delay: 50
-    content: "\e[?25l\e[36m?\e[39m \e[1mPick a node you want to delete\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent\e[39m\e[24m\e[90m\e[39m\r\n    Parent/Child1\e[90m\e[39m\r\n"
-  - delay: 750
-    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[36m?\e[39m \e[1mPick a node you want to delete\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n    Parent\e[90m\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent/Child1\e[39m\e[24m\e[90m\e[39m\r\n"
-  - delay: 151
-    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[36m?\e[39m \e[1mPick a node you want to delete\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent\e[39m\e[24m\e[90m\e[39m\r\n    Parent/Child1\e[90m\e[39m\r\n"
-  - delay: 192
-    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[36m?\e[39m \e[1mPick a node you want to delete\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n    Parent\e[90m\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent/Child1\e[39m\e[24m\e[90m\e[39m\r\n"
-  - delay: 872
-    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[36m?\e[39m \e[1mPick a node you want to delete\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent\e[39m\e[24m\e[90m\e[39m\r\n    Parent/Child1\e[90m\e[39m\r\n"
-  - delay: 183
-    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m✔\e[39m \e[1mPick a node you want to delete\e[22m \e[90m›\e[39m Parent\r\n\e[?25h\e[?25l\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;33mAre you sure you want to delete node Parent and its children?\e[0m\e[22m \e[90m›\e[39m \e[36m\e[4mno\e[39m\e[24m \e[90m/\e[39m yes"
-  - delay: 1022
+  - delay: 69
+    content: "\e[?25l\e[36m?\e[39m \e[1mPick a node you want to delete\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent\e[39m\e[24m\e[90m\e[39m\r\n    Parent2\e[90m\e[39m\r\n    Parent/Child1\e[90m\e[39m\r\n    Parent/Child1/Child2\e[90m\e[39m\r\n    Parent/Child1/Child2/Child3\e[90m\e[39m\r\n    Parent2/ChildN\e[90m\e[39m\r\n"
+  - delay: 1471
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[36m?\e[39m \e[1mPick a node you want to delete\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n    Parent\e[90m\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent2\e[39m\e[24m\e[90m\e[39m\r\n    Parent/Child1\e[90m\e[39m\r\n    Parent/Child1/Child2\e[90m\e[39m\r\n    Parent/Child1/Child2/Child3\e[90m\e[39m\r\n    Parent2/ChildN\e[90m\e[39m\r\n"
+  - delay: 390
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[36m?\e[39m \e[1mPick a node you want to delete\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n    Parent\e[90m\e[39m\r\n    Parent2\e[90m\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent/Child1\e[39m\e[24m\e[90m\e[39m\r\n    Parent/Child1/Child2\e[90m\e[39m\r\n    Parent/Child1/Child2/Child3\e[90m\e[39m\r\n    Parent2/ChildN\e[90m\e[39m\r\n"
+  - delay: 127
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[36m?\e[39m \e[1mPick a node you want to delete\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n    Parent\e[90m\e[39m\r\n    Parent2\e[90m\e[39m\r\n    Parent/Child1\e[90m\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent/Child1/Child2\e[39m\e[24m\e[90m\e[39m\r\n    Parent/Child1/Child2/Child3\e[90m\e[39m\r\n    Parent2/ChildN\e[90m\e[39m\r\n"
+  - delay: 152
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[36m?\e[39m \e[1mPick a node you want to delete\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n    Parent\e[90m\e[39m\r\n    Parent2\e[90m\e[39m\r\n    Parent/Child1\e[90m\e[39m\r\n    Parent/Child1/Child2\e[90m\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent/Child1/Child2/Child3\e[39m\e[24m\e[90m\e[39m\r\n    Parent2/ChildN\e[90m\e[39m\r\n"
+  - delay: 497
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[36m?\e[39m \e[1mPick a node you want to delete\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n    Parent\e[90m\e[39m\r\n    Parent2\e[90m\e[39m\r\n    Parent/Child1\e[90m\e[39m\r\n    Parent/Child1/Child2\e[90m\e[39m\r\n    Parent/Child1/Child2/Child3\e[90m\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent2/ChildN\e[39m\e[24m\e[90m\e[39m\r\n"
+  - delay: 976
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[36m?\e[39m \e[1mPick a node you want to delete\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n    Parent\e[90m\e[39m\r\n    Parent2\e[90m\e[39m\r\n    Parent/Child1\e[90m\e[39m\r\n    Parent/Child1/Child2\e[90m\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent/Child1/Child2/Child3\e[39m\e[24m\e[90m\e[39m\r\n    Parent2/ChildN\e[90m\e[39m\r\n"
+  - delay: 134
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[36m?\e[39m \e[1mPick a node you want to delete\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n    Parent\e[90m\e[39m\r\n    Parent2\e[90m\e[39m\r\n    Parent/Child1\e[90m\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent/Child1/Child2\e[39m\e[24m\e[90m\e[39m\r\n    Parent/Child1/Child2/Child3\e[90m\e[39m\r\n    Parent2/ChildN\e[90m\e[39m\r\n"
+  - delay: 105
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[36m?\e[39m \e[1mPick a node you want to delete\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n    Parent\e[90m\e[39m\r\n    Parent2\e[90m\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent/Child1\e[39m\e[24m\e[90m\e[39m\r\n    Parent/Child1/Child2\e[90m\e[39m\r\n    Parent/Child1/Child2/Child3\e[90m\e[39m\r\n    Parent2/ChildN\e[90m\e[39m\r\n"
+  - delay: 136
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[36m?\e[39m \e[1mPick a node you want to delete\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n    Parent\e[90m\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent2\e[39m\e[24m\e[90m\e[39m\r\n    Parent/Child1\e[90m\e[39m\r\n    Parent/Child1/Child2\e[90m\e[39m\r\n    Parent/Child1/Child2/Child3\e[90m\e[39m\r\n    Parent2/ChildN\e[90m\e[39m\r\n"
+  - delay: 104
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[36m?\e[39m \e[1mPick a node you want to delete\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent\e[39m\e[24m\e[90m\e[39m\r\n    Parent2\e[90m\e[39m\r\n    Parent/Child1\e[90m\e[39m\r\n    Parent/Child1/Child2\e[90m\e[39m\r\n    Parent/Child1/Child2/Child3\e[90m\e[39m\r\n    Parent2/ChildN\e[90m\e[39m\r\n"
+  - delay: 400
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[36m?\e[39m \e[1mPick a node you want to delete\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n    Parent\e[90m\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent2\e[39m\e[24m\e[90m\e[39m\r\n    Parent/Child1\e[90m\e[39m\r\n    Parent/Child1/Child2\e[90m\e[39m\r\n    Parent/Child1/Child2/Child3\e[90m\e[39m\r\n    Parent2/ChildN\e[90m\e[39m\r\n"
+  - delay: 232
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m✔\e[39m \e[1mPick a node you want to delete\e[22m \e[90m›\e[39m Parent2\r\n\e[?25h\e[?25l\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;33mAre you sure you want to delete node Parent2 and its children?\e[0m\e[22m \e[90m›\e[39m \e[36m\e[4mno\e[39m\e[24m \e[90m/\e[39m yes"
+  - delay: 1456
+    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;33mAre you sure you want to delete node Parent2 and its children?\e[0m\e[22m \e[90m›\e[39m no \e[90m/\e[39m \e[36m\e[4myes\e[39m\e[24m"
+  - delay: 367
+    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1m\e[1;33mAre you sure you want to delete node Parent2 and its children?\e[0m\e[22m \e[90m…\e[39m no \e[90m/\e[39m \e[36m\e[4myes\e[39m\e[24m\r\n\e[?25h\e[1;32minfo: Deleted node Parent2 and it's children!\e[0m\r\n$ "
+  - delay: 1279
+    content: cognigy-hammer delete node
+  - delay: 561
+    content: "\r\n\e[?2004l\r"
+  - delay: 59
+    content: "\e[?25l\e[36m?\e[39m \e[1mPick a node you want to delete\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent\e[39m\e[24m\e[90m\e[39m\r\n    Parent/Child1\e[90m\e[39m\r\n    Parent/Child1/Child2\e[90m\e[39m\r\n    Parent/Child1/Child2/Child3\e[90m\e[39m\r\n"
+  - delay: 864
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[36m?\e[39m \e[1mPick a node you want to delete\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n    Parent\e[90m\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent/Child1\e[39m\e[24m\e[90m\e[39m\r\n    Parent/Child1/Child2\e[90m\e[39m\r\n    Parent/Child1/Child2/Child3\e[90m\e[39m\r\n"
+  - delay: 109
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[36m?\e[39m \e[1mPick a node you want to delete\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n    Parent\e[90m\e[39m\r\n    Parent/Child1\e[90m\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent/Child1/Child2\e[39m\e[24m\e[90m\e[39m\r\n    Parent/Child1/Child2/Child3\e[90m\e[39m\r\n"
+  - delay: 600
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[36m?\e[39m \e[1mPick a node you want to delete\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n    Parent\e[90m\e[39m\r\n    Parent/Child1\e[90m\e[39m\r\n    Parent/Child1/Child2\e[90m\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent/Child1/Child2/Child3\e[39m\e[24m\e[90m\e[39m\r\n"
+  - delay: 417
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m✔\e[39m \e[1mPick a node you want to delete\e[22m \e[90m›\e[39m Parent/Child1/Child2/Child3\r\n\e[?25h\e[?25l\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;33mAre you sure you want to delete node Parent/Child1/Child2/Child3 and its children?\e[0m\e[22m \e[90m›\e[39m \e[36m\e[4mno\e[39m\e[24m \e[90m/\e[39m yes"
+  - delay: 583
+    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;33mAre you sure you want to delete node Parent/Child1/Child2/Child3 and its children?\e[0m\e[22m \e[90m›\e[39m no \e[90m/\e[39m \e[36m\e[4myes\e[39m\e[24m"
+  - delay: 311
+    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1m\e[1;33mAre you sure you want to delete node Parent/Child1/Child2/Child3 and its children?\e[0m\e[22m \e[90m…\e[39m no \e[90m/\e[39m \e[36m\e[4myes\e[39m\e[24m\r\n\e[?25h\e[1;32minfo: Deleted node Parent/Child1/Child2/Child3 and it's children!\e[0m\r\n"
+  - delay: 5
+    content: "$ "
+  - delay: 688
+    content: cognigy-hammer delete node
+  - delay: 119
+    content: "\b\b\b\b\b\b\b\b\b\b\bcrea\e[C\e[C\e[C\e[C\e[C\e[C\e[C"
+  - delay: 681
+    content: "\b\b\b\b\b\b\b\b\b\b\bdele\e[C\e[C\e[C\e[C\e[C\e[C\e[C"
+  - delay: 287
+    content: "\r\n\e[?2004l\r"
+  - delay: 81
+    content: "\e[?25l\e[36m?\e[39m \e[1mPick a node you want to delete\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent\e[39m\e[24m\e[90m\e[39m\r\n    Parent/Child1\e[90m\e[39m\r\n    Parent/Child1/Child2\e[90m\e[39m\r\n"
+  - delay: 999
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[36m?\e[39m \e[1mPick a node you want to delete\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n    Parent\e[90m\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent/Child1\e[39m\e[24m\e[90m\e[39m\r\n    Parent/Child1/Child2\e[90m\e[39m\r\n"
+  - delay: 760
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[36m?\e[39m \e[1mPick a node you want to delete\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n    Parent\e[90m\e[39m\r\n    Parent/Child1\e[90m\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent/Child1/Child2\e[39m\e[24m\e[90m\e[39m\r\n"
+  - delay: 328
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[36m?\e[39m \e[1mPick a node you want to delete\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n    Parent\e[90m\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent/Child1\e[39m\e[24m\e[90m\e[39m\r\n    Parent/Child1/Child2\e[90m\e[39m\r\n"
+  - delay: 537
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[36m?\e[39m \e[1mPick a node you want to delete\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent\e[39m\e[24m\e[90m\e[39m\r\n    Parent/Child1\e[90m\e[39m\r\n    Parent/Child1/Child2\e[90m\e[39m\r\n"
+  - delay: 279
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m✔\e[39m \e[1mPick a node you want to delete\e[22m \e[90m›\e[39m Parent\r\n\e[?25h\e[?25l\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;33mAre you sure you want to delete node Parent and its children?\e[0m\e[22m \e[90m›\e[39m \e[36m\e[4mno\e[39m\e[24m \e[90m/\e[39m yes"
+  - delay: 855
     content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;33mAre you sure you want to delete node Parent and its children?\e[0m\e[22m \e[90m›\e[39m no \e[90m/\e[39m \e[36m\e[4myes\e[39m\e[24m"
-  - delay: 177
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;33mAre you sure you want to delete node Parent and its children?\e[0m\e[22m \e[90m›\e[39m \e[36m\e[4mno\e[39m\e[24m \e[90m/\e[39m yes"
-  - delay: 695
-    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1m\e[1;33mAre you sure you want to delete node Parent and its children?\e[0m\e[22m \e[90m…\e[39m \e[36m\e[4mno\e[39m\e[24m \e[90m/\e[39m yes\r\n\e[?25h\e[?2004h\e]0;user@IdeapadGaming: ~/Documents/ext\a\e[01;32muser@IdeapadGaming\e[00m:\e[01;34m~/Documents/ext\e[00m$ "
-  - delay: 1140
+  - delay: 983
+    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1m\e[1;33mAre you sure you want to delete node Parent and its children?\e[0m\e[22m \e[90m…\e[39m no \e[90m/\e[39m \e[36m\e[4myes\e[39m\e[24m\r\n\e[?25h\e[1;32minfo: Deleted node Parent and it's children!\e[0m\r\n"
+  - delay: 5
+    content: "$ "
+  - delay: 743
     content: "\e[?2004l\r\r\nlogout\r\n"

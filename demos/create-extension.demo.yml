@@ -9,7 +9,7 @@ config:
   
   # Specify the current working directory path
   # the default is the current working directory path
-  cwd: /home/user/Documents
+  cwd: /home/default/code
   
   # Export additional ENV variables
   env:
@@ -18,7 +18,7 @@ config:
   # Explicitly set the number of columns
   # or use `auto` to take the current
   # number of columns of your shell
-  cols: 174
+  cols: 116
   
   # Explicitly set the number of rows
   # or use `auto` to take the current
@@ -50,7 +50,7 @@ config:
   # Don't forget to add a backgroundColor style with a null as type
   frameBox:
     type: floating
-    title: ch.create-extension
+    title: create scaffold
     style:
       border: 0px black solid
       # boxShadow: none
@@ -111,217 +111,197 @@ config:
   
 # Records, feel free to edit them
 records:
-  - delay: 1
-    content: "\e"
-  - delay: 381
-    content: "\e[?2004h\e]0;user@IdeapadGaming: ~/Documents\a\e[01;32muser@IdeapadGaming\e[00m:\e[01;34m~/Documents\e[00m$ "
-  - delay: 1966
+  - delay: 362
+    content: "$ "
+  - delay: 1776
     content: c
-  - delay: 96
-    content: h
-  - delay: 336
-    content: .
-  - delay: 336
-    content: c
-  - delay: 408
-    content: r
+  - delay: 63
+    content: o
+  - delay: 121
+    content: g
+  - delay: 104
+    content: 'n'
+  - delay: 168
+    content: i
   - delay: 80
+    content: g
+  - delay: 184
+    content: 'y'
+  - delay: 336
+    content: '-'
+  - delay: 257
+    content: h
+  - delay: 119
+    content: a
+  - delay: 120
+    content: m
+  - delay: 112
+    content: m
+  - delay: 96
+    content: e
+  - delay: 80
+    content: r
+  - delay: 144
+    content: ' '
+  - delay: 288
+    content: c
+  - delay: 200
+    content: r
+  - delay: 63
     content: e
   - delay: 72
     content: a
-  - delay: 136
-    content: t
-  - delay: 47
-    content: e
-  - delay: 184
-    content: '-'
-  - delay: 424
-    content: e
-  - delay: 159
-    content: x
-  - delay: 233
-    content: t
   - delay: 153
-    content: 'ension '
-  - delay: 574
-    content: "\r\n\e[?2004l\r"
-  - delay: 63
-    content: "\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mLocation\e[0m\e[22m \e[90m›\e[39m \e[90m.\e[39m\e7\e8"
-  - delay: 1362
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mLocation\e[0m\e[22m \e[90m›\e[39m e\e7\e8"
-  - delay: 175
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mLocation\e[0m\e[22m \e[90m›\e[39m ex\e7\e8"
-  - delay: 320
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mLocation\e[0m\e[22m \e[90m›\e[39m ext\e7\e8"
-  - delay: 752
-    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1m\e[1;32mLocation\e[0m\e[22m \e[90m…\e[39m ext\e7\e8\r\n\e[?25h\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mExtension name\e[0m\e[22m \e[90m›\e[39m \e7\e8"
-  - delay: 1526
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mExtension name\e[0m\e[22m \e[90m›\e[39m e\e7\e8"
-  - delay: 167
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mExtension name\e[0m\e[22m \e[90m›\e[39m ex\e7\e8"
+    content: t
+  - delay: 55
+    content: e
+  - delay: 97
+    content: ' '
+  - delay: 1650
+    content: s
+  - delay: 255
+    content: c
+  - delay: 87
+    content: a
   - delay: 176
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mExtension name\e[0m\e[22m \e[90m›\e[39m ext\e7\e8"
-  - delay: 80
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mExtension name\e[0m\e[22m \e[90m›\e[39m exte\e7\e8"
-  - delay: 328
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mExtension name\e[0m\e[22m \e[90m›\e[39m exten\e7\e8"
-  - delay: 103
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mExtension name\e[0m\e[22m \e[90m›\e[39m extens\e7\e8"
+    content: f
   - delay: 104
+    content: f
+  - delay: 160
+    content: o
+  - delay: 184
+    content: l
+  - delay: 87
+    content: d
+  - delay: 321
+    content: "\r\n\e[?2004l\r"
+  - delay: 56
+    content: "\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mLocation\e[0m\e[22m \e[90m›\e[39m \e[90m.\e[39m\e7\e8"
+  - delay: 1008
+    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mLocation\e[0m\e[22m \e[90m›\e[39m e\e7\e8"
+  - delay: 176
+    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mLocation\e[0m\e[22m \e[90m›\e[39m ex\e7\e8"
+  - delay: 192
+    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mLocation\e[0m\e[22m \e[90m›\e[39m ext\e7\e8"
+  - delay: 64
+    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mLocation\e[0m\e[22m \e[90m›\e[39m exte\e7\e8"
+  - delay: 224
+    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mLocation\e[0m\e[22m \e[90m›\e[39m exten\e7\e8"
+  - delay: 176
+    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mLocation\e[0m\e[22m \e[90m›\e[39m extens\e7\e8"
+  - delay: 120
+    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mLocation\e[0m\e[22m \e[90m›\e[39m extensi\e7\e8"
+  - delay: 136
+    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mLocation\e[0m\e[22m \e[90m›\e[39m extensio\e7\e8"
+  - delay: 153
+    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mLocation\e[0m\e[22m \e[90m›\e[39m extension\e7\e8"
+  - delay: 265
+    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1m\e[1;32mLocation\e[0m\e[22m \e[90m…\e[39m extension\e7\e8\r\n\e[?25h\e[?25l\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;33mLocation /home/default/code/extension is not empty! overwrite it?\e[0m\e[22m \e[90m›\e[39m \e[36m\e[4mno\e[39m\e[24m \e[90m/\e[39m yes"
+  - delay: 773
+    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;33mLocation /home/default/code/extension is not empty! overwrite it?\e[0m\e[22m \e[90m›\e[39m no \e[90m/\e[39m \e[36m\e[4myes\e[39m\e[24m"
+  - delay: 448
+    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1m\e[1;33mLocation /home/default/code/extension is not empty! overwrite it?\e[0m\e[22m \e[90m…\e[39m no \e[90m/\e[39m \e[36m\e[4myes\e[39m\e[24m\r\n\e[?25h\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mExtension name\e[0m\e[22m \e[90m›\e[39m \e7\e8"
+  - delay: 1062
+    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mExtension name\e[0m\e[22m \e[90m›\e[39m e\e7\e8"
+  - delay: 184
+    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mExtension name\e[0m\e[22m \e[90m›\e[39m ex\e7\e8"
+  - delay: 184
+    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mExtension name\e[0m\e[22m \e[90m›\e[39m ext\e7\e8"
+  - delay: 55
+    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mExtension name\e[0m\e[22m \e[90m›\e[39m exte\e7\e8"
+  - delay: 169
+    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mExtension name\e[0m\e[22m \e[90m›\e[39m exten\e7\e8"
+  - delay: 104
+    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mExtension name\e[0m\e[22m \e[90m›\e[39m extens\e7\e8"
+  - delay: 112
     content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mExtension name\e[0m\e[22m \e[90m›\e[39m extensi\e7\e8"
   - delay: 136
     content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mExtension name\e[0m\e[22m \e[90m›\e[39m extensio\e7\e8"
-  - delay: 160
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mExtension name\e[0m\e[22m \e[90m›\e[39m extension\e7\e8"
-  - delay: 288
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mExtension name\e[0m\e[22m \e[90m›\e[39m extensiond\e7\e8"
-  - delay: 240
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mExtension name\e[0m\e[22m \e[90m›\e[39m extension\e7\e8"
-  - delay: 128
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mExtension name\e[0m\e[22m \e[90m›\e[39m extension-\e7\e8"
-  - delay: 112
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mExtension name\e[0m\e[22m \e[90m›\e[39m extension-d\e7\e8"
-  - delay: 40
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mExtension name\e[0m\e[22m \e[90m›\e[39m extension-de\e7\e8"
-  - delay: 112
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mExtension name\e[0m\e[22m \e[90m›\e[39m extension-dem\e7\e8"
-  - delay: 160
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mExtension name\e[0m\e[22m \e[90m›\e[39m extension-demo\e7\e8"
-  - delay: 168
-    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1m\e[1;32mExtension name\e[0m\e[22m \e[90m…\e[39m extension-demo\e7\e8\r\n\e[?25h\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mExtension version\e[0m\e[22m \e[90m›\e[39m \e[90m1.0.0\e[39m\e7\e8"
-  - delay: 695
-    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1m\e[1;32mExtension version\e[0m\e[22m \e[90m…\e[39m 1.0.0\e7\e8\r\n\e[?25h\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mExtension description\e[0m\e[22m \e[90m›\e[39m \e7\e8"
-  - delay: 1056
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mExtension description\e[0m\e[22m \e[90m›\e[39m e\e7\e8"
-  - delay: 176
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mExtension description\e[0m\e[22m \e[90m›\e[39m ex\e7\e8"
-  - delay: 160
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mExtension description\e[0m\e[22m \e[90m›\e[39m ext\e7\e8"
-  - delay: 63
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mExtension description\e[0m\e[22m \e[90m›\e[39m exte\e7\e8"
-  - delay: 103
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mExtension description\e[0m\e[22m \e[90m›\e[39m exten\e7\e8"
-  - delay: 88
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mExtension description\e[0m\e[22m \e[90m›\e[39m extens\e7\e8"
-  - delay: 112
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mExtension description\e[0m\e[22m \e[90m›\e[39m extensi\e7\e8"
-  - delay: 128
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mExtension description\e[0m\e[22m \e[90m›\e[39m extensio\e7\e8"
-  - delay: 153
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mExtension description\e[0m\e[22m \e[90m›\e[39m extension\e7\e8"
-  - delay: 79
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mExtension description\e[0m\e[22m \e[90m›\e[39m extension \e7\e8"
   - delay: 136
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mExtension description\e[0m\e[22m \e[90m›\e[39m extension d\e7\e8"
-  - delay: 41
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mExtension description\e[0m\e[22m \e[90m›\e[39m extension de\e7\e8"
-  - delay: 87
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mExtension description\e[0m\e[22m \e[90m›\e[39m extension dem\e7\e8"
-  - delay: 168
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mExtension description\e[0m\e[22m \e[90m›\e[39m extension demo\e7\e8"
-  - delay: 120
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mExtension description\e[0m\e[22m \e[90m›\e[39m extension demo \e7\e8"
-  - delay: 576
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mExtension description\e[0m\e[22m \e[90m›\e[39m extension demo\e7\e8"
-  - delay: 176
-    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1m\e[1;32mExtension description\e[0m\e[22m \e[90m…\e[39m extension demo\e7\e8\r\n\e[?25h\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mExtension keywords\e[0m\e[22m \e[90m›\e[39m \e7\e8"
-  - delay: 575
-    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1m\e[1;32mExtension keywords\e[0m\e[22m \e[90m…\e[39m \e7\e8\r\n\e[?25h\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mExtension author\e[0m\e[22m \e[90m›\e[39m \e7\e8"
-  - delay: 511
-    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1m\e[1;32mExtension author\e[0m\e[22m \e[90m…\e[39m \e7\e8\r\n\e[?25h\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mExtension license\e[0m\e[22m \e[90m›\e[39m \e[90mUNLICENSED\e[39m\e7\e8"
-  - delay: 384
-    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1m\e[1;32mExtension license\e[0m\e[22m \e[90m…\e[39m UNLICENSED\e7\e8\r\n\e[?25h\e[1;32minfo: Deleting /home/user/Documents/ext ...\e[0m\r\n\e[1;32minfo: Creating scaffold in /home/user/Documents/ext...\e[0m\r\n"
-  - delay: 15
-    content: "\e[33mhint: Using 'master' as the name for the initial branch. This default branch name\e[m\r\n\e[33mhint: is subject to change. To configure the initial branch name to use in all\e[m\r\n\e[33mhint: of your new repositories, which will suppress this warning, call:\e[m\r\n\e[33mhint: \e[m\r\n\e[33mhint: \tgit config --global init.defaultBranch <name>\e[m\r\n\e[33mhint: \e[m\r\n\e[33mhint: Names commonly chosen instead of 'master' are 'main', 'trunk' and\e[m\r\n\e[33mhint: 'development'. The just-created branch can be renamed via this command:\e[m\r\n\e[33mhint: \e[m\r\n\e[33mhint: \tgit branch -m <name>\e[m\r\nInitialized empty Git repository in /home/user/Documents/ext/.git/\r\n"
-  - delay: 375
-    content: "\e[?25l(\e[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂\e[0m) ⠴ idealTree:ext: \e[7msill\e[0m \e[35midealTree\e[0m buildDeps\e[0m\e[K\r"
+    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mExtension name\e[0m\e[22m \e[90m›\e[39m extension\e7\e8"
+  - delay: 209
+    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1m\e[1;32mExtension name\e[0m\e[22m \e[90m…\e[39m extension\e7\e8\r\n\e[?25h\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mExtension version\e[0m\e[22m \e[90m›\e[39m \e[90m1.0.0\e[39m\e7\e8"
+  - delay: 560
+    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1m\e[1;32mExtension version\e[0m\e[22m \e[90m…\e[39m 1.0.0\e7\e8\r\n\e[?25h\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mExtension description\e[0m\e[22m \e[90m›\e[39m \e[90mextension\e[39m\e7\e8"
+  - delay: 454
+    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1m\e[1;32mExtension description\e[0m\e[22m \e[90m…\e[39m extension\e7\e8\r\n\e[?25h\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mExtension keywords\e[0m\e[22m \e[90m›\e[39m \e[90mextension\e[39m\e7\e8"
+  - delay: 600
+    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1m\e[1;32mExtension keywords\e[0m\e[22m \e[90m…\e[39m extension\e7\e8\r\n\e[?25h\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mExtension author\e[0m\e[22m \e[90m›\e[39m \e7\e8"
+  - delay: 759
+    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mExtension author\e[0m\e[22m \e[90m›\e[39m t\e7\e8"
+  - delay: 175
+    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mExtension author\e[0m\e[22m \e[90m›\e[39m tg\e7\e8"
+  - delay: 192
+    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mExtension author\e[0m\e[22m \e[90m›\e[39m tgb\e7\e8"
+  - delay: 167
+    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mExtension author\e[0m\e[22m \e[90m›\e[39m tgbv\e7\e8"
+  - delay: 208
+    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1m\e[1;32mExtension author\e[0m\e[22m \e[90m…\e[39m tgbv\e7\e8\r\n\e[?25h\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mExtension license\e[0m\e[22m \e[90m›\e[39m \e[90mUNLICENSED\e[39m\e7\e8"
+  - delay: 648
+    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1m\e[1;32mExtension license\e[0m\e[22m \e[90m…\e[39m UNLICENSED\e7\e8\r\n\e[?25h\e[?25l\e[2K\e[1G\e[36m?\e[39m \e[1m\e[1;32mInitialize GIT repo for extension?\e[0m\e[22m \e[90m›\e[39m \e[90m(Y/n)\e[39m"
+  - delay: 839
+    content: "\a"
+  - delay: 567
+    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1m\e[1;32mInitialize GIT repo for extension?\e[0m\e[22m \e[90m…\e[39m yes\r\n\e[?25h\e[1;32minfo: Deleting /home/default/code/extension ...\e[0m\r\n"
+  - delay: 98
+    content: "\e[1;32minfo: Creating scaffold in /home/default/code/extension...\e[0m\r\n"
+  - delay: 38
+    content: "\e[33mhint: Using 'master' as the name for the initial branch. This default branch name\e[m\r\n\e[33mhint: is subject to change. To configure the initial branch name to use in all\e[m\r\n\e[33mhint: of your new repositories, which will suppress this warning, call:\e[m\r\n\e[33mhint: \e[m\r\n\e[33mhint: \tgit config --global init.defaultBranch <name>\e[m\r\n\e[33mhint: \e[m\r\n\e[33mhint: Names commonly chosen instead of 'master' are 'main', 'trunk' and\e[m\r\n\e[33mhint: 'development'. The just-created branch can be renamed via this command:\e[m\r\n\e[33mhint: \e[m\r\n\e[33mhint: \tgit branch -m <name>\e[m\r\nInitialized empty Git repository in /home/default/code/extension/.git/\r\n"
+  - delay: 289
+    content: "\e[1G\e[0K⠙"
+  - delay: 183
+    content: "\e[1G\e[0K⠹"
+  - delay: 95
+    content: "\e[1G\e[0K⠸"
+  - delay: 82
+    content: "\e[1G\e[0K⠼"
+  - delay: 81
+    content: "\e[1G\e[0K⠴"
+  - delay: 92
+    content: "\e[1G\e[0K⠦"
+  - delay: 110
+    content: "\e[1G\e[0K⠧"
+  - delay: 80
+    content: "\e[1G\e[0K⠇"
+  - delay: 80
+    content: "\e[1G\e[0K⠏"
+  - delay: 82
+    content: "\e[1G\e[0K⠋"
   - delay: 99
-    content: "(\e[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂\e[0m) ⠏ idealTree:ext: \e[7msill\e[0m \e[35midealTree\e[0m buildDeps\e[0m\e[K\r"
-  - delay: 55
-    content: "(\e[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂\e[0m) ⠹ idealTree:ext: \e[7msill\e[0m \e[35midealTree\e[0m buildDeps\e[0m\e[K\r"
-  - delay: 67
-    content: "(\e[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂\e[0m) ⠸ idealTree:ext: \e[7msill\e[0m \e[35midealTree\e[0m buildDeps\e[0m\e[K\r"
-  - delay: 49
-    content: "(\e[107;97m#########\e[0m\e[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂\e[0m) ⠏ idealTree:ext: \e[32;40mtiming\e[0m \e[35midealTree:#root\e[0m Completed in 270ms\e[0m\e[K\r"
-  - delay: 50
-    content: "(\e[107;97m#########\e[0m\e[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂\e[0m) ⠴ idealTree:ext: \e[32;40mtiming\e[0m \e[35midealTree:#root\e[0m Completed in 270ms\e[0m\e[K\r"
-  - delay: 66
-    content: "(\e[107;97m#########\e[0m\e[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂\e[0m) ⠙ idealTree:ext: \e[32;40mtiming\e[0m \e[35midealTree:#root\e[0m Completed in 270ms\e[0m\e[K\r"
-  - delay: 52
-    content: "(\e[107;97m#########\e[0m\e[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂\e[0m) ⠋ idealTree:ext: \e[32;40mtiming\e[0m \e[35midealTree:#root\e[0m Completed in 270ms\e[0m\e[K\r"
-  - delay: 74
-    content: "(\e[107;97m#########\e[0m\e[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂\e[0m) ⠙ idealTree:tslint: \e[7msill\e[0m \e[35mplaceDep\e[0m ROOT chalk@4.1.2 OK for: @jest/core@29.7.0 want: ^4.0.0\e[0m\e[K\r"
-  - delay: 59
-    content: "(\e[107;97m#########\e[0m\e[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂\e[0m) ⠋ idealTree:tslint: \e[7msill\e[0m \e[35mplaceDep\e[0m ROOT chalk@4.1.2 OK for: @jest/core@29.7.0 want: ^4.0.0\e[0m\e[K\r"
-  - delay: 50
-    content: "(\e[107;97m#########\e[0m\e[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂\e[0m) ⠧ idealTree:tslint: \e[7msill\e[0m \e[35mplaceDep\e[0m ROOT chalk@4.1.2 OK for: @jest/core@29.7.0 want: ^4.0.0\e[0m\e[K\r"
-  - delay: 52
-    content: "(\e[107;97m#########\e[0m\e[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂\e[0m) ⠧ idealTree:tslint: \e[7msill\e[0m \e[35mplaceDep\e[0m ROOT chalk@4.1.2 OK for: @jest/core@29.7.0 want: ^4.0.0\e[0m\e[K\r"
-  - delay: 51
-    content: "(\e[107;97m#########\e[0m\e[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂\e[0m) ⠏ idealTree:istanbul-lib-instrument: \e[7msill\e[0m \e[35mplaceDep\e[0m ROOT semver@6.3.1 OK for: @babel/core@7.23.2 want: ^6.3.1\e[0m\e[K\r"
-  - delay: 50
-    content: "(\e[107;97m#########\e[0m\e[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂\e[0m) ⠼ idealTree:istanbul-lib-instrument: \e[7msill\e[0m \e[35mplaceDep\e[0m ROOT semver@6.3.1 OK for: @babel/core@7.23.2 want: ^6.3.1\e[0m\e[K\r"
-  - delay: 52
-    content: "(\e[107;97m#########\e[0m\e[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂\e[0m) ⠇ idealTree:istanbul-lib-instrument: \e[7msill\e[0m \e[35mplaceDep\e[0m ROOT semver@6.3.1 OK for: @babel/core@7.23.2 want: ^6.3.1\e[0m\e[K\r"
-  - delay: 57
-    content: "(\e[107;97m##\e[0m\e[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂\e[0m) ⠋ idealTree:istanbul-lib-instrument: \e[32;40mtiming\e[0m \e[35midealTree:node_modules/istanbul-lib-instrument\e[0m Completed in 1ms\e[0m\e[K\r"
-  - delay: 65
-    content: "(\e[107;97m##\e[0m\e[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂\e[0m) ⠸ idealTree:istanbul-lib-instrument: \e[32;40mtiming\e[0m \e[35midealTree:node_modules/istanbul-lib-instrument\e[0m Completed in 1ms\e[0m\e[K\r"
-  - delay: 51
-    content: "(\e[107;97m##\e[0m\e[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂\e[0m) ⠋ idealTree:istanbul-lib-instrument: \e[32;40mtiming\e[0m \e[35midealTree:node_modules/istanbul-lib-instrument\e[0m Completed in 1ms\e[0m\e[K\r"
-  - delay: 50
-    content: "(\e[107;97m##\e[0m\e[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂\e[0m) ⠹ idealTree:istanbul-lib-instrument: \e[32;40mtiming\e[0m \e[35midealTree:node_modules/istanbul-lib-instrument\e[0m Completed in 1ms\e[0m\e[K\r"
-  - delay: 50
-    content: "(\e[107;97m#####\e[0m\e[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂\e[0m) ⠦ idealTree:jest-worker: \e[32;40mtiming\e[0m \e[35midealTree:node_modules/jest-worker\e[0m Completed in 0ms\e[0m\e[K\r"
-  - delay: 52
-    content: "(\e[107;97m#####\e[0m\e[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂\e[0m) ⠇ idealTree:pretty-format: \e[32;40mtiming\e[0m \e[35midealTree:node_modules/pretty-format\e[0m Completed in 1ms\e[0m\e[K\r"
-  - delay: 57
-    content: "(\e[107;97m#######\e[0m\e[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂\e[0m) ⠸ idealTree:tslint: \e[32;40mtiming\e[0m \e[35midealTree:node_modules/tslint\e[0m Completed in 8ms\e[0m\e[K\r"
-  - delay: 50
-    content: "(\e[107;97m#########\e[0m\e[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂\e[0m) ⠸ idealTree: \e[32;40mtiming\e[0m \e[35midealTree\e[0m Completed in 1304ms\e[0m\e[K\r"
-  - delay: 96
-    content: "(\e[107;97m#########\e[0m\e[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂\e[0m) ⠏ reify:fsevents: \e[7msill\e[0m \e[35mreify\e[0m mark deleted [ '/home/user/Documents/ext/node_modules/fsevents' ]\e[0m\e[K\r"
-  - delay: 76
-    content: "(\e[107;97m#########\e[0m\e[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂\e[0m) ⠏ reify:fsevents: \e[7msill\e[0m \e[35mreify\e[0m mark deleted [ '/home/user/Documents/ext/node_modules/fsevents' ]\e[0m\e[K\r"
-  - delay: 113
-    content: "(\e[107;97m#########\e[0m\e[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂\e[0m) ⠏ reify:fsevents: \e[7msill\e[0m \e[35mreify\e[0m mark deleted [ '/home/user/Documents/ext/node_modules/fsevents' ]\e[0m\e[K\r"
-  - delay: 127
-    content: "(\e[107;97m#########\e[0m\e[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂\e[0m) ⠏ reify:fsevents: \e[7msill\e[0m \e[35mreify\e[0m mark deleted [ '/home/user/Documents/ext/node_modules/fsevents' ]\e[0m\e[K\r"
-  - delay: 133
-    content: "(\e[107;97m#########\e[0m\e[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂\e[0m) ⠏ reify:fsevents: \e[7msill\e[0m \e[35mreify\e[0m mark deleted [ '/home/user/Documents/ext/node_modules/fsevents' ]\e[0m\e[K\r"
-  - delay: 52
-    content: "(\e[107;97m#########\e[0m\e[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂\e[0m) ⠏ reify:fsevents: \e[7msill\e[0m \e[35mreify\e[0m mark deleted [ '/home/user/Documents/ext/node_modules/fsevents' ]\e[0m\e[K\r"
-  - delay: 51
-    content: "(\e[107;97m#########\e[0m\e[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂\e[0m) ⠋ reify:fb-watchman: \e[32;40mtiming\e[0m \e[35mreifyNode:node_modules/fsevents\e[0m Completed in 74ms\e[0m\e[K\r"
-  - delay: 51
-    content: "(\e[107;97m############\e[0m\e[100;90m⠂⠂⠂⠂⠂⠂\e[0m) ⠙ reify:jest-docblock: \e[32;40mtiming\e[0m \e[35mreifyNode:node_modules/tslint/node_modules/escape-string-regexp\e[0m Completed in 666ms\e[0m\e[K\r"
-  - delay: 52
-    content: "(\e[107;97m###############\e[0m\e[100;90m⠂⠂⠂\e[0m) ⠹ reify:jest-matcher-utils: \e[32;40mtiming\e[0m \e[35mreifyNode:node_modules/source-map-support\e[0m Completed in 729ms\e[0m\e[K\r"
-  - delay: 50
-    content: "(\e[107;97m################\e[0m\e[100;90m⠂⠂\e[0m) ⠼ reify:jest-circus: \e[32;40mtiming\e[0m \e[35mreifyNode:node_modules/@cognigy/extension-tools\e[0m Completed in 767ms\e[0m\e[K\r"
-  - delay: 51
-    content: "(\e[107;97m#################\e[0m\e[100;90m⠂\e[0m) ⠇ reify:type-fest: \e[32;40mtiming\e[0m \e[35mreifyNode:node_modules/prompt\e[0m Completed in 810ms\e[0m\e[K\r"
-  - delay: 51
-    content: "(\e[107;97m#################\e[0m\e[100;90m⠂\e[0m) ⠼ reify:prompts: \e[32;40mtiming\e[0m \e[35mreifyNode:node_modules/yargs\e[0m Completed in 874ms\e[0m\e[K\r"
-  - delay: 49
-    content: "(\e[107;97m##################\e[0m) ⠦ reify:ts-node: \e[32;40mtiming\e[0m \e[35mreifyNode:node_modules/async\e[0m Completed in 931ms\e[0m\e[K\r"
-  - delay: 50
-    content: "(\e[107;97m##################\e[0m) ⠋ reify:@babel/types: \e[32;40mtiming\e[0m \e[35mreifyNode:node_modules/handlebars\e[0m Completed in 960ms\e[0m\e[K\r"
-  - delay: 37
-    content: "\r\e[K\e[?25h\e[37;40mnpm\e[0m \e[0m\e[30;43mWARN\e[0m \e[0m\e[35mdeprecated\e[0m tslint@6.1.3: TSLint has been deprecated in favor of ESLint. Please see https://github.com/palantir/tslint/issues/4534 for more information.\r\n\e[0m"
-  - delay: 13
-    content: "\e[?25l(\e[107;97m##################\e[0m) ⠹ reify:tslint: \e[30;43mWARN\e[0m \e[35mdeprecated\e[0m tslint@6.1.3: TSLint has been deprecated in favor of ESLint. Please see https://github.com/palantir/tslint/issues/4534 f\e[0m\e[K\r"
-  - delay: 50
-    content: "(\e[107;97m##################\e[0m) ⠼ reify:lodash: \e[32;40mtiming\e[0m \e[35mreifyNode:node_modules/caniuse-lite\e[0m Completed in 1049ms\e[0m\e[K\r"
-  - delay: 50
-    content: "(\e[107;97m##################\e[0m) ⠼ reify:lodash: \e[32;40mtiming\e[0m \e[35mreifyNode:node_modules/caniuse-lite\e[0m Completed in 1049ms\e[0m\e[K\r"
+    content: "\e[1G\e[0K⠙"
   - delay: 83
-    content: "(\e[107;97m##################\e[0m) ⠙ reify:typescript: \e[32;40mtiming\e[0m \e[35mreifyNode:node_modules/lodash\e[0m Completed in 1068ms\e[0m\e[K\r"
-  - delay: 30
-    content: "\r\e[K\e[?25h"
-  - delay: 8
-    content: "\r\nadded 350 packages, and audited 351 packages in 3s\r\n\r\n33 packages are looking for funding\r\n  run `npm fund` for details\r\n\r\nfound \e[32m\e[1m0\e[22m\e[39m vulnerabilities\r\n"
-  - delay: 21
-    content: "\e[1;32minfo: Done!\e[0m\r\n\e[?2004h\e]0;user@IdeapadGaming: ~/Documents\a\e[01;32muser@IdeapadGaming\e[00m:\e[01;34m~/Documents\e[00m$ "
-  - delay: 1119
-    content: "\e[?2004l\r\r\nlogout\r\n"
+    content: "\e[1G\e[0K⠹"
+  - delay: 84
+    content: "\e[1G\e[0K⠸"
+  - delay: 80
+    content: "\e[1G\e[0K⠼"
+  - delay: 93
+    content: "\e[1G\e[0K⠴"
+  - delay: 120
+    content: "\e[1G\e[0K⠦"
+  - delay: 80
+    content: "\e[1G\e[0K⠧"
+  - delay: 232
+    content: "\e[1G\e[0K⠇"
+  - delay: 66
+    content: "\e[1G\e[0K\e[1mnpm\e[22m \e[33mwarn\e[39m \e[94mdeprecated\e[39m inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.\r\n\e[1G\e[0K⠇"
+  - delay: 29
+    content: "\e[1G\e[0K\e[1mnpm\e[22m \e[33mwarn\e[39m \e[94mdeprecated\e[39m glob@7.2.3: Glob versions prior to v9 are no longer supported\r\n\e[1G\e[0K⠏"
+  - delay: 79
+    content: "\e[1G\e[0K⠋"
+  - delay: 80
+    content: "\e[1G\e[0K⠙"
+  - delay: 92
+    content: "\e[1G\e[0K⠹"
+  - delay: 80
+    content: "\e[1G\e[0K⠸"
+  - delay: 80
+    content: "\e[1G\e[0K⠼"
+  - delay: 81
+    content: "\e[1G\e[0K⠴"
+  - delay: 25
+    content: "\e[1G\e[0K\r\nadded 297 packages, and audited 298 packages in 3s\r\n\e[1G\e[0K⠴\e[1G\e[0K\r\n\e[1G\e[0K⠴\e[1G\e[0K33 packages are looking for funding\r\n\e[1G\e[0K⠴\e[1G\e[0K  run `npm fund` for details\r\n\e[1G\e[0K⠴\e[1G\e[0K\r\nfound \e[32m\e[1m0\e[22m\e[39m vulnerabilities\r\n\e[1G\e[0K⠴\e[1G\e[0K"
+  - delay: 23
+    content: "\e[1;32minfo: Done!"
+  - delay: 1974
+    content: " "
