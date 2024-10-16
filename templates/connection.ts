@@ -1,13 +1,16 @@
 import type { IConnectionSchema } from "@cognigy/extension-tools"
 
-export interface I{{CONNECTION_NAME}} extends IConnectionSchema {
+export interface I{{CONNECTION_NAME}} {
 
 }
 
-export default {
+const connection: IConnectionSchema = {
   type: '{{CONNECTION_NAME}}',
   label: '{{CONNECTION_NAME}} label here',
   fields: [
 
   ]
-} as I{{CONNECTION_NAME}};
+};
+
+export default connection;
+export const {{CONNECTION_NAME}} = connection;
