@@ -44,7 +44,7 @@ Options:
   -h, --help       display help for command
 
 Commands:
-  list <entity>    List entities based on their entity.
+  list <entity>    List current nodes / connections.
   create <entity>  Guided way to create a new entity.
   delete <entity>  Guided way to delete an existing entity.
   help [command]   display help for command

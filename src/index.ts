@@ -1,8 +1,7 @@
 import { existsSync, mkdirSync, readdirSync, statSync, writeFileSync,  } from "fs";
 import { resolve, parse  } from "path";
 
-import { IConnectionSchema, INodeDescriptor } from '@cognigy/extension-tools/build';
-import { INodeFunctionBaseParams } from "@cognigy/extension-tools/build/interfaces/descriptor";
+import { IConnectionSchema, INodeDescriptor, INodeFunctionBaseParams } from '@cognigy/extension-tools/build';
 import { createNodeDescriptor as cCreateNodeDescriptor } from "@cognigy/extension-tools";
 
 import isTsNode from "detect-ts-node";

@@ -20,7 +20,7 @@ const entityArg = new Argument('<entity>', 'Entity type.')
 
 program
   .command('list')
-  .description('List entities based on their entity.')
+  .description('List current nodes / connections.')
   .addArgument(new Argument('<entity>', 'Entity type.').choices(['connections', 'conns', 'nodes']))
   .action((entity: string) => {
     switch(entity) {
