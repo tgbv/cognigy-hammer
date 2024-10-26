@@ -59,7 +59,7 @@
     "ts-jest": "^29.1.1"
   },
   "dependencies": {
-    "@cognigy/extension-tools": "^0.15.1",
+    "@cognigy/extension-tools": "^0.16.1",
     "commander": "^12.1.0",
     "detect-ts-node": "^1.0.5",
     "handlebars": "^4.7.8",
