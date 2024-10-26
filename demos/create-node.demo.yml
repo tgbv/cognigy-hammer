@@ -9,7 +9,7 @@ config:
   
   # Specify the current working directory path
   # the default is the current working directory path
-  cwd: /home/default/code/extension
+  cwd: /home/default/code/cognigy-hammer/bebe
   
   # Export additional ENV variables
   env:
@@ -111,319 +111,313 @@ config:
   
 # Records, feel free to edit them
 records:
-  - delay: 368
+  - delay: 353
     content: "$ "
-  - delay: 1337
+  - delay: 1664
     content: c
-  - delay: 86
+  - delay: 112
     content: o
-  - delay: 163
+  - delay: 153
     content: g
-  - delay: 62
+  - delay: 112
     content: 'n'
-  - delay: 177
+  - delay: 152
     content: i
-  - delay: 80
+  - delay: 63
     content: g
-  - delay: 168
+  - delay: 169
     content: 'y'
-  - delay: 264
+  - delay: 119
     content: '-'
-  - delay: 208
+  - delay: 417
     content: h
-  - delay: 144
+  - delay: 119
     content: a
-  - delay: 128
+  - delay: 112
     content: m
-  - delay: 104
+  - delay: 121
     content: m
-  - delay: 256
+  - delay: 87
+    content: e
+  - delay: 47
+    content: r
+  - delay: 170
+    content: ' '
+  - delay: 110
+    content: c
+  - delay: 193
+    content: r
+  - delay: 72
     content: e
   - delay: 55
-    content: r
-  - delay: 145
-    content: ' '
-  - delay: 168
-    content: c
-  - delay: 208
-    content: r
-  - delay: 63
-    content: e
-  - delay: 73
     content: a
-  - delay: 119
+  - delay: 121
     content: t
-  - delay: 56
+  - delay: 39
     content: e
   - delay: 64
     content: ' '
-  - delay: 153
+  - delay: 154
     content: 'n'
-  - delay: 185
+  - delay: 183
     content: o
-  - delay: 103
-    content: d
-  - delay: 55
-    content: e
-  - delay: 177
-    content: "\r\n\e[?2004l\r"
-  - delay: 82
-    content: "\e[2K\e[1G\e[36m?\e[39m \e[1mInput node name\e[22m \e[90m›\e[39m \e7\e8"
-  - delay: 416
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1mInput node name\e[22m \e[90m›\e[39m P\e7\e8"
-  - delay: 159
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1mInput node name\e[22m \e[90m›\e[39m Pa\e7\e8"
-  - delay: 111
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1mInput node name\e[22m \e[90m›\e[39m Par\e7\e8"
-  - delay: 72
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1mInput node name\e[22m \e[90m›\e[39m Pare\e7\e8"
-  - delay: 184
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1mInput node name\e[22m \e[90m›\e[39m Paren\e7\e8"
-  - delay: 96
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1mInput node name\e[22m \e[90m›\e[39m Parent\e7\e8"
-  - delay: 233
-    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1mInput node name\e[22m \e[90m…\e[39m Parent\e7\e8\r\n\e[?25h\e[?25l\e[2K\e[1G\e[36m?\e[39m \e[1mDoes node have parent?\e[22m \e[90m›\e[39m \e[36m\e[4mno\e[39m\e[24m \e[90m/\e[39m yes"
-  - delay: 1294
-    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1mDoes node have parent?\e[22m \e[90m…\e[39m \e[36m\e[4mno\e[39m\e[24m \e[90m/\e[39m yes\r\n\e[?25h"
-  - delay: 15
-    content: "\e[1;32mNode Parent has been created.\e[0m\r\n"
-  - delay: 5
-    content: "$ "
-  - delay: 1739
-    content: c
-  - delay: 393
-    content: o
-  - delay: 63
-    content: g
-  - delay: 136
-    content: 'n'
-  - delay: 161
-    content: i
-  - delay: 53
-    content: g
-  - delay: 146
-    content: 'y'
-  - delay: 87
-    content: '-'
-  - delay: 193
-    content: h
   - delay: 128
-    content: a
-  - delay: 88
-    content: m
-  - delay: 104
-    content: m
-  - delay: 80
-    content: e
-  - delay: 55
-    content: r
-  - delay: 113
-    content: ' '
-  - delay: 136
-    content: c
-  - delay: 176
-    content: r
-  - delay: 72
-    content: e
-  - delay: 55
-    content: a
-  - delay: 88
-    content: t
-  - delay: 73
-    content: e
-  - delay: 47
-    content: ' '
-  - delay: 137
-    content: 'n'
-  - delay: 192
-    content: o
-  - delay: 96
     content: d
-  - delay: 39
+  - delay: 48
     content: e
-  - delay: 138
+  - delay: 193
     content: "\r\n\e[?2004l\r"
   - delay: 65
     content: "\e[2K\e[1G\e[36m?\e[39m \e[1mInput node name\e[22m \e[90m›\e[39m \e7\e8"
-  - delay: 991
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1mInput node name\e[22m \e[90m›\e[39m C\e7\e8"
-  - delay: 167
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1mInput node name\e[22m \e[90m›\e[39m Ch\e7\e8"
-  - delay: 178
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1mInput node name\e[22m \e[90m›\e[39m Chi\e7\e8"
-  - delay: 192
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1mInput node name\e[22m \e[90m›\e[39m Chil\e7\e8"
-  - delay: 94
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1mInput node name\e[22m \e[90m›\e[39m Child\e7\e8"
-  - delay: 488
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1mInput node name\e[22m \e[90m›\e[39m Child1\e7\e8"
-  - delay: 401
-    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1mInput node name\e[22m \e[90m…\e[39m Child1\e7\e8\r\n\e[?25h\e[?25l\e[2K\e[1G\e[36m?\e[39m \e[1mDoes node have parent?\e[22m \e[90m›\e[39m \e[36m\e[4mno\e[39m\e[24m \e[90m/\e[39m yes"
-  - delay: 628
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1mDoes node have parent?\e[22m \e[90m›\e[39m no \e[90m/\e[39m \e[36m\e[4myes\e[39m\e[24m"
-  - delay: 303
-    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1mDoes node have parent?\e[22m \e[90m…\e[39m no \e[90m/\e[39m \e[36m\e[4myes\e[39m\e[24m\r\n\e[?25h\e[?25l\e[36m?\e[39m \e[1mPick a parent node\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent\e[39m\e[24m\e[90m\e[39m\r\n"
-  - delay: 1014
-    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m✔\e[39m \e[1mPick a parent node\e[22m \e[90m›\e[39m Parent\r\n\e[?25h"
-  - delay: 14
-    content: "\e[1;32mNode './src/nodes/Parent/Child1.ts' has been created.\e[0m\r\n$ "
-  - delay: 1165
-    content: cognigy-hammer create node
-  - delay: 608
-    content: "\r\n\e[?2004l\r"
-  - delay: 57
-    content: "\e[2K\e[1G\e[36m?\e[39m \e[1mInput node name\e[22m \e[90m›\e[39m \e7\e8"
-  - delay: 1409
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1mInput node name\e[22m \e[90m›\e[39m C\e7\e8"
-  - delay: 118
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1mInput node name\e[22m \e[90m›\e[39m Ch\e7\e8"
-  - delay: 168
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1mInput node name\e[22m \e[90m›\e[39m Chi\e7\e8"
-  - delay: 192
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1mInput node name\e[22m \e[90m›\e[39m Chil\e7\e8"
-  - delay: 119
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1mInput node name\e[22m \e[90m›\e[39m Child\e7\e8"
-  - delay: 403
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1mInput node name\e[22m \e[90m›\e[39m Child2\e7\e8"
-  - delay: 583
-    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1mInput node name\e[22m \e[90m…\e[39m Child2\e7\e8\r\n\e[?25h\e[?25l\e[2K\e[1G\e[36m?\e[39m \e[1mDoes node have parent?\e[22m \e[90m›\e[39m \e[36m\e[4mno\e[39m\e[24m \e[90m/\e[39m yes"
-  - delay: 687
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1mDoes node have parent?\e[22m \e[90m›\e[39m no \e[90m/\e[39m \e[36m\e[4myes\e[39m\e[24m"
-  - delay: 848
-    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1mDoes node have parent?\e[22m \e[90m…\e[39m no \e[90m/\e[39m \e[36m\e[4myes\e[39m\e[24m\r\n\e[?25h\e[?25l\e[36m?\e[39m \e[1mPick a parent node\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent\e[39m\e[24m\e[90m\e[39m\r\n    Parent/Child1\e[90m\e[39m\r\n"
-  - delay: 605
-    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[36m?\e[39m \e[1mPick a parent node\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n    Parent\e[90m\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent/Child1\e[39m\e[24m\e[90m\e[39m\r\n"
-  - delay: 207
-    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[36m?\e[39m \e[1mPick a parent node\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent\e[39m\e[24m\e[90m\e[39m\r\n    Parent/Child1\e[90m\e[39m\r\n"
-  - delay: 217
-    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[36m?\e[39m \e[1mPick a parent node\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n    Parent\e[90m\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent/Child1\e[39m\e[24m\e[90m\e[39m\r\n"
-  - delay: 504
-    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m✔\e[39m \e[1mPick a parent node\e[22m \e[90m›\e[39m Parent/Child1\r\n\e[?25h"
-  - delay: 15
-    content: "\e[1;32mNode './src/nodes/Parent/Child1/Child2.ts' has been created.\e[0m\r\n$ "
-  - delay: 531
-    content: cognigy-hammer create node
-  - delay: 504
-    content: "\r\n\e[?2004l\r"
-  - delay: 63
-    content: "\e[2K\e[1G\e[36m?\e[39m \e[1mInput node name\e[22m \e[90m›\e[39m \e7\e8"
-  - delay: 931
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1mInput node name\e[22m \e[90m›\e[39m C\e7\e8"
-  - delay: 199
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1mInput node name\e[22m \e[90m›\e[39m Ch\e7\e8"
-  - delay: 184
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1mInput node name\e[22m \e[90m›\e[39m Chi\e7\e8"
-  - delay: 176
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1mInput node name\e[22m \e[90m›\e[39m Chil\e7\e8"
-  - delay: 120
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1mInput node name\e[22m \e[90m›\e[39m Child\e7\e8"
-  - delay: 271
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1mInput node name\e[22m \e[90m›\e[39m Child3\e7\e8"
-  - delay: 585
-    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1mInput node name\e[22m \e[90m…\e[39m Child3\e7\e8\r\n\e[?25h\e[?25l\e[2K\e[1G\e[36m?\e[39m \e[1mDoes node have parent?\e[22m \e[90m›\e[39m \e[36m\e[4mno\e[39m\e[24m \e[90m/\e[39m yes"
-  - delay: 1004
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1mDoes node have parent?\e[22m \e[90m›\e[39m no \e[90m/\e[39m \e[36m\e[4myes\e[39m\e[24m"
-  - delay: 523
-    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1mDoes node have parent?\e[22m \e[90m…\e[39m no \e[90m/\e[39m \e[36m\e[4myes\e[39m\e[24m\r\n\e[?25h\e[?25l\e[36m?\e[39m \e[1mPick a parent node\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent\e[39m\e[24m\e[90m\e[39m\r\n    Parent/Child1\e[90m\e[39m\r\n    Parent/Child1/Child2\e[90m\e[39m\r\n"
-  - delay: 573
-    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[36m?\e[39m \e[1mPick a parent node\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n    Parent\e[90m\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent/Child1\e[39m\e[24m\e[90m\e[39m\r\n    Parent/Child1/Child2\e[90m\e[39m\r\n"
-  - delay: 129
-    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[36m?\e[39m \e[1mPick a parent node\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n    Parent\e[90m\e[39m\r\n    Parent/Child1\e[90m\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent/Child1/Child2\e[39m\e[24m\e[90m\e[39m\r\n"
-  - delay: 224
-    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[36m?\e[39m \e[1mPick a parent node\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n    Parent\e[90m\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent/Child1\e[39m\e[24m\e[90m\e[39m\r\n    Parent/Child1/Child2\e[90m\e[39m\r\n"
-  - delay: 120
-    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[36m?\e[39m \e[1mPick a parent node\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent\e[39m\e[24m\e[90m\e[39m\r\n    Parent/Child1\e[90m\e[39m\r\n    Parent/Child1/Child2\e[90m\e[39m\r\n"
-  - delay: 296
-    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[36m?\e[39m \e[1mPick a parent node\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n    Parent\e[90m\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent/Child1\e[39m\e[24m\e[90m\e[39m\r\n    Parent/Child1/Child2\e[90m\e[39m\r\n"
-  - delay: 135
-    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[36m?\e[39m \e[1mPick a parent node\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n    Parent\e[90m\e[39m\r\n    Parent/Child1\e[90m\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent/Child1/Child2\e[39m\e[24m\e[90m\e[39m\r\n"
-  - delay: 584
-    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[36m?\e[39m \e[1mPick a parent node\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n    Parent\e[90m\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent/Child1\e[39m\e[24m\e[90m\e[39m\r\n    Parent/Child1/Child2\e[90m\e[39m\r\n"
-  - delay: 439
-    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[36m?\e[39m \e[1mPick a parent node\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n    Parent\e[90m\e[39m\r\n    Parent/Child1\e[90m\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent/Child1/Child2\e[39m\e[24m\e[90m\e[39m\r\n"
-  - delay: 256
-    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m✔\e[39m \e[1mPick a parent node\e[22m \e[90m›\e[39m Parent/Child1/Child2\r\n\e[?25h"
-  - delay: 14
-    content: "\e[1;32mNode './src/nodes/Parent/Child1/Child2/Child3.ts' has been created.\e[0m\r\n$ "
-  - delay: 693
-    content: cognigy-hammer create node
-  - delay: 512
-    content: "\r\n\e[?2004l\r"
-  - delay: 71
-    content: "\e[2K\e[1G\e[36m?\e[39m \e[1mInput node name\e[22m \e[90m›\e[39m \e7\e8"
-  - delay: 986
+  - delay: 1593
     content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1mInput node name\e[22m \e[90m›\e[39m P\e7\e8"
-  - delay: 184
+  - delay: 214
     content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1mInput node name\e[22m \e[90m›\e[39m Pa\e7\e8"
-  - delay: 79
+  - delay: 70
     content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1mInput node name\e[22m \e[90m›\e[39m Par\e7\e8"
-  - delay: 97
+  - delay: 89
     content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1mInput node name\e[22m \e[90m›\e[39m Pare\e7\e8"
-  - delay: 112
+  - delay: 263
     content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1mInput node name\e[22m \e[90m›\e[39m Paren\e7\e8"
-  - delay: 104
+  - delay: 55
     content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1mInput node name\e[22m \e[90m›\e[39m Parent\e7\e8"
-  - delay: 184
+  - delay: 483
+    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1mInput node name\e[22m \e[90m…\e[39m Parent\e7\e8\r\n\e[?25h\e[?25l\e[2K\e[1G\e[36m?\e[39m \e[1mDoes node have parent?\e[22m \e[90m›\e[39m \e[36m\e[4mno\e[39m\e[24m \e[90m/\e[39m yes"
+  - delay: 1236
+    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1mDoes node have parent?\e[22m \e[90m…\e[39m \e[36m\e[4mno\e[39m\e[24m \e[90m/\e[39m yes\r\n\e[?25h\e[?25l\e[36m?\e[39m \e[1mNode variant\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mregular\e[39m\e[24m\e[90m\e[39m\r\n    mini\e[90m\e[39m\r\n    hexagon\e[90m\e[39m\r\n"
+  - delay: 1263
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m✔\e[39m \e[1mNode variant\e[22m \e[90m›\e[39m regular\r\n\e[?25h\e[2K\e[1G\e[36m?\e[39m \e[1mNode color. Can be hex or word.\e[22m \e[90m›\e[39m \e[90mwhite\e[39m\e7\e8"
+  - delay: 849
+    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1mNode color. Can be hex or word.\e[22m \e[90m…\e[39m white\e7\e8\r\n\e[?25h\e[2K\e[1G\e[36m?\e[39m \e[1mText color. Can be hex or word.\e[22m \e[90m›\e[39m \e[90mblack\e[39m\e7\e8"
+  - delay: 511
+    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1mText color. Can be hex or word.\e[22m \e[90m…\e[39m black\e7\e8\r\n\e[?25h\e[?25l\e[2K\e[1G\e[36m?\e[39m \e[1mIs collapsable?\e[22m \e[90m›\e[39m no \e[90m/\e[39m \e[36m\e[4myes\e[39m\e[24m"
+  - delay: 360
+    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1mIs collapsable?\e[22m \e[90m…\e[39m no \e[90m/\e[39m \e[36m\e[4myes\e[39m\e[24m\r\n\e[?25h\e[?25l\e[2K\e[1G\e[36m?\e[39m \e[1mIs creatable?\e[22m \e[90m›\e[39m no \e[90m/\e[39m \e[36m\e[4myes\e[39m\e[24m"
+  - delay: 240
+    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1mIs creatable?\e[22m \e[90m…\e[39m no \e[90m/\e[39m \e[36m\e[4myes\e[39m\e[24m\r\n\e[?25h\e[?25l\e[2K\e[1G\e[36m?\e[39m \e[1mIs deleteable?\e[22m \e[90m›\e[39m no \e[90m/\e[39m \e[36m\e[4myes\e[39m\e[24m"
+  - delay: 247
+    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1mIs deleteable?\e[22m \e[90m…\e[39m no \e[90m/\e[39m \e[36m\e[4myes\e[39m\e[24m\r\n\e[?25h\e[?25l\e[2K\e[1G\e[36m?\e[39m \e[1mIs editable?\e[22m \e[90m›\e[39m no \e[90m/\e[39m \e[36m\e[4myes\e[39m\e[24m"
+  - delay: 223
+    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1mIs editable?\e[22m \e[90m…\e[39m no \e[90m/\e[39m \e[36m\e[4myes\e[39m\e[24m\r\n\e[?25h\e[?25l\e[2K\e[1G\e[36m?\e[39m \e[1mIs movable?\e[22m \e[90m›\e[39m no \e[90m/\e[39m \e[36m\e[4myes\e[39m\e[24m"
+  - delay: 216
+    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1mIs movable?\e[22m \e[90m…\e[39m no \e[90m/\e[39m \e[36m\e[4myes\e[39m\e[24m\r\n\e[?25h"
+  - delay: 16
+    content: "\e[1;32mNode Parent has been created.\e[0m\r\n"
+  - delay: 6
+    content: "$ "
+  - delay: 1729
+    content: cognigy-hammer create node
+  - delay: 336
+    content: "\b\e[K"
+  - delay: 633
+    content: e
+  - delay: 175
+    content: "\r\n\e[?2004l\r"
+  - delay: 61
+    content: "\e[2K\e[1G\e[36m?\e[39m \e[1mInput node name\e[22m \e[90m›\e[39m \e7\e8"
+  - delay: 1493
+    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1mInput node name\e[22m \e[90m›\e[39m P\e7\e8"
+  - delay: 159
+    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1mInput node name\e[22m \e[90m›\e[39m Pa\e7\e8"
+  - delay: 120
+    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1mInput node name\e[22m \e[90m›\e[39m Par\e7\e8"
+  - delay: 63
+    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1mInput node name\e[22m \e[90m›\e[39m Pare\e7\e8"
+  - delay: 96
+    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1mInput node name\e[22m \e[90m›\e[39m Paren\e7\e8"
+  - delay: 80
+    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1mInput node name\e[22m \e[90m›\e[39m Parent\e7\e8"
+  - delay: 177
     content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1mInput node name\e[22m \e[90m›\e[39m Parent2\e7\e8"
-  - delay: 288
+  - delay: 264
     content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1mInput node name\e[22m \e[90m…\e[39m Parent2\e7\e8\r\n\e[?25h\e[?25l\e[2K\e[1G\e[36m?\e[39m \e[1mDoes node have parent?\e[22m \e[90m›\e[39m \e[36m\e[4mno\e[39m\e[24m \e[90m/\e[39m yes"
-  - delay: 616
+  - delay: 1013
     content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1mDoes node have parent?\e[22m \e[90m›\e[39m no \e[90m/\e[39m \e[36m\e[4myes\e[39m\e[24m"
-  - delay: 167
+  - delay: 656
     content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1mDoes node have parent?\e[22m \e[90m›\e[39m \e[36m\e[4mno\e[39m\e[24m \e[90m/\e[39m yes"
-  - delay: 337
-    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1mDoes node have parent?\e[22m \e[90m…\e[39m \e[36m\e[4mno\e[39m\e[24m \e[90m/\e[39m yes\r\n\e[?25h"
-  - delay: 14
+  - delay: 313
+    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1mDoes node have parent?\e[22m \e[90m…\e[39m \e[36m\e[4mno\e[39m\e[24m \e[90m/\e[39m yes\r\n\e[?25h\e[?25l\e[36m?\e[39m \e[1mNode variant\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mregular\e[39m\e[24m\e[90m\e[39m\r\n    mini\e[90m\e[39m\r\n    hexagon\e[90m\e[39m\r\n"
+  - delay: 893
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m✔\e[39m \e[1mNode variant\e[22m \e[90m›\e[39m regular\r\n\e[?25h\e[2K\e[1G\e[36m?\e[39m \e[1mNode color. Can be hex or word.\e[22m \e[90m›\e[39m \e[90mwhite\e[39m\e7\e8"
+  - delay: 360
+    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1mNode color. Can be hex or word.\e[22m \e[90m…\e[39m white\e7\e8\r\n\e[?25h\e[2K\e[1G\e[36m?\e[39m \e[1mText color. Can be hex or word.\e[22m \e[90m›\e[39m \e[90mblack\e[39m\e7\e8"
+  - delay: 145
+    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1mText color. Can be hex or word.\e[22m \e[90m…\e[39m black\e7\e8\r\n\e[?25h\e[?25l\e[2K\e[1G\e[36m?\e[39m \e[1mIs collapsable?\e[22m \e[90m›\e[39m no \e[90m/\e[39m \e[36m\e[4myes\e[39m\e[24m"
+  - delay: 128
+    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1mIs collapsable?\e[22m \e[90m…\e[39m no \e[90m/\e[39m \e[36m\e[4myes\e[39m\e[24m\r\n\e[?25h\e[?25l\e[2K\e[1G\e[36m?\e[39m \e[1mIs creatable?\e[22m \e[90m›\e[39m no \e[90m/\e[39m \e[36m\e[4myes\e[39m\e[24m"
+  - delay: 136
+    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1mIs creatable?\e[22m \e[90m…\e[39m no \e[90m/\e[39m \e[36m\e[4myes\e[39m\e[24m\r\n\e[?25h\e[?25l\e[2K\e[1G\e[36m?\e[39m \e[1mIs deleteable?\e[22m \e[90m›\e[39m no \e[90m/\e[39m \e[36m\e[4myes\e[39m\e[24m"
+  - delay: 118
+    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1mIs deleteable?\e[22m \e[90m…\e[39m no \e[90m/\e[39m \e[36m\e[4myes\e[39m\e[24m\r\n\e[?25h\e[?25l\e[2K\e[1G\e[36m?\e[39m \e[1mIs editable?\e[22m \e[90m›\e[39m no \e[90m/\e[39m \e[36m\e[4myes\e[39m\e[24m"
+  - delay: 153
+    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1mIs editable?\e[22m \e[90m…\e[39m no \e[90m/\e[39m \e[36m\e[4myes\e[39m\e[24m\r\n\e[?25h\e[?25l\e[2K\e[1G\e[36m?\e[39m \e[1mIs movable?\e[22m \e[90m›\e[39m no \e[90m/\e[39m \e[36m\e[4myes\e[39m\e[24m"
+  - delay: 319
+    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1mIs movable?\e[22m \e[90m…\e[39m no \e[90m/\e[39m \e[36m\e[4myes\e[39m\e[24m\r\n\e[?25h"
+  - delay: 16
     content: "\e[1;32mNode Parent2 has been created.\e[0m\r\n"
   - delay: 5
     content: "$ "
-  - delay: 701
+  - delay: 850
     content: cognigy-hammer create node
-  - delay: 127
-    content: "\b\b\b\bscaffold"
-  - delay: 480
-    content: "\b\b\b\b\b\b\b\b\e[4Pnode"
-  - delay: 416
+  - delay: 769
     content: "\r\n\e[?2004l\r"
-  - delay: 81
+  - delay: 58
     content: "\e[2K\e[1G\e[36m?\e[39m \e[1mInput node name\e[22m \e[90m›\e[39m \e7\e8"
-  - delay: 959
+  - delay: 1400
     content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1mInput node name\e[22m \e[90m›\e[39m C\e7\e8"
-  - delay: 168
+  - delay: 238
     content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1mInput node name\e[22m \e[90m›\e[39m Ch\e7\e8"
-  - delay: 176
+  - delay: 184
     content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1mInput node name\e[22m \e[90m›\e[39m Chi\e7\e8"
-  - delay: 168
+  - delay: 191
     content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1mInput node name\e[22m \e[90m›\e[39m Chil\e7\e8"
-  - delay: 96
+  - delay: 72
     content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1mInput node name\e[22m \e[90m›\e[39m Child\e7\e8"
-  - delay: 656
-    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1mInput node name\e[22m \e[90m›\e[39m ChildN\e7\e8"
-  - delay: 313
-    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1mInput node name\e[22m \e[90m…\e[39m ChildN\e7\e8\r\n\e[?25h\e[?25l\e[2K\e[1G\e[36m?\e[39m \e[1mDoes node have parent?\e[22m \e[90m›\e[39m \e[36m\e[4mno\e[39m\e[24m \e[90m/\e[39m yes"
-  - delay: 686
+  - delay: 505
+    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1mInput node name\e[22m \e[90m›\e[39m Child1\e7\e8"
+  - delay: 337
+    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1mInput node name\e[22m \e[90m…\e[39m Child1\e7\e8\r\n\e[?25h\e[?25l\e[2K\e[1G\e[36m?\e[39m \e[1mDoes node have parent?\e[22m \e[90m›\e[39m \e[36m\e[4mno\e[39m\e[24m \e[90m/\e[39m yes"
+  - delay: 853
     content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1mDoes node have parent?\e[22m \e[90m›\e[39m no \e[90m/\e[39m \e[36m\e[4myes\e[39m\e[24m"
   - delay: 312
-    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1mDoes node have parent?\e[22m \e[90m…\e[39m no \e[90m/\e[39m \e[36m\e[4myes\e[39m\e[24m\r\n\e[?25h"
-  - delay: 35
-    content: "\e[?25l\e[36m?\e[39m \e[1mPick a parent node\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent\e[39m\e[24m\e[90m\e[39m\r\n    Parent2\e[90m\e[39m\r\n    Parent/Child1\e[90m\e[39m\r\n    Parent/Child1/Child2\e[90m\e[39m\r\n    Parent/Child1/Child2/Child3\e[90m\e[39m\r\n"
-  - delay: 447
-    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[36m?\e[39m \e[1mPick a parent node\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n    Parent\e[90m\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent2\e[39m\e[24m\e[90m\e[39m\r\n    Parent/Child1\e[90m\e[39m\r\n    Parent/Child1/Child2\e[90m\e[39m\r\n    Parent/Child1/Child2/Child3\e[90m\e[39m\r\n"
-  - delay: 93
-    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[36m?\e[39m \e[1mPick a parent node\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n    Parent\e[90m\e[39m\r\n    Parent2\e[90m\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent/Child1\e[39m\e[24m\e[90m\e[39m\r\n    Parent/Child1/Child2\e[90m\e[39m\r\n    Parent/Child1/Child2/Child3\e[90m\e[39m\r\n"
-  - delay: 121
-    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[36m?\e[39m \e[1mPick a parent node\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n    Parent\e[90m\e[39m\r\n    Parent2\e[90m\e[39m\r\n    Parent/Child1\e[90m\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent/Child1/Child2\e[39m\e[24m\e[90m\e[39m\r\n    Parent/Child1/Child2/Child3\e[90m\e[39m\r\n"
+    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1mDoes node have parent?\e[22m \e[90m…\e[39m no \e[90m/\e[39m \e[36m\e[4myes\e[39m\e[24m\r\n\e[?25h\e[?25l\e[36m?\e[39m \e[1mPick a parent node\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent\e[39m\e[24m\e[90m\e[39m\r\n    Parent2\e[90m\e[39m\r\n"
+  - delay: 749
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[36m?\e[39m \e[1mPick a parent node\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n    Parent\e[90m\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent2\e[39m\e[24m\e[90m\e[39m\r\n"
+  - delay: 216
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[36m?\e[39m \e[1mPick a parent node\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent\e[39m\e[24m\e[90m\e[39m\r\n    Parent2\e[90m\e[39m\r\n"
+  - delay: 553
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m✔\e[39m \e[1mPick a parent node\e[22m \e[90m›\e[39m Parent\r\n\e[?25h\e[?25l\e[36m?\e[39m \e[1mNode variant\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n    regular\e[90m\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mmini\e[39m\e[24m\e[90m\e[39m\r\n    hexagon\e[90m\e[39m\r\n"
+  - delay: 766
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m✔\e[39m \e[1mNode variant\e[22m \e[90m›\e[39m mini\r\n\e[?25h\e[2K\e[1G\e[36m?\e[39m \e[1mNode color. Can be hex or word.\e[22m \e[90m›\e[39m \e[90mgreen\e[39m\e7\e8"
+  - delay: 343
+    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1mNode color. Can be hex or word.\e[22m \e[90m…\e[39m green\e7\e8\r\n\e[?25h\e[2K\e[1G\e[36m?\e[39m \e[1mText color. Can be hex or word.\e[22m \e[90m›\e[39m \e[90mwhite\e[39m\e7\e8"
+  - delay: 128
+    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1mText color. Can be hex or word.\e[22m \e[90m…\e[39m white\e7\e8\r\n\e[?25h\e[?25l\e[2K\e[1G\e[36m?\e[39m \e[1mIs collapsable?\e[22m \e[90m›\e[39m no \e[90m/\e[39m \e[36m\e[4myes\e[39m\e[24m"
+  - delay: 145
+    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1mIs collapsable?\e[22m \e[90m…\e[39m no \e[90m/\e[39m \e[36m\e[4myes\e[39m\e[24m\r\n\e[?25h\e[?25l\e[2K\e[1G\e[36m?\e[39m \e[1mIs creatable?\e[22m \e[90m›\e[39m \e[36m\e[4mno\e[39m\e[24m \e[90m/\e[39m yes"
   - delay: 127
-    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[36m?\e[39m \e[1mPick a parent node\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n    Parent\e[90m\e[39m\r\n    Parent2\e[90m\e[39m\r\n    Parent/Child1\e[90m\e[39m\r\n    Parent/Child1/Child2\e[90m\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent/Child1/Child2/Child3\e[39m\e[24m\e[90m\e[39m\r\n"
-  - delay: 241
-    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[36m?\e[39m \e[1mPick a parent node\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n    Parent\e[90m\e[39m\r\n    Parent2\e[90m\e[39m\r\n    Parent/Child1\e[90m\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent/Child1/Child2\e[39m\e[24m\e[90m\e[39m\r\n    Parent/Child1/Child2/Child3\e[90m\e[39m\r\n"
+    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1mIs creatable?\e[22m \e[90m…\e[39m \e[36m\e[4mno\e[39m\e[24m \e[90m/\e[39m yes\r\n\e[?25h\e[?25l\e[2K\e[1G\e[36m?\e[39m \e[1mIs deleteable?\e[22m \e[90m›\e[39m \e[36m\e[4mno\e[39m\e[24m \e[90m/\e[39m yes"
+  - delay: 150
+    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1mIs deleteable?\e[22m \e[90m…\e[39m \e[36m\e[4mno\e[39m\e[24m \e[90m/\e[39m yes\r\n\e[?25h\e[?25l\e[2K\e[1G\e[36m?\e[39m \e[1mIs editable?\e[22m \e[90m›\e[39m no \e[90m/\e[39m \e[36m\e[4myes\e[39m\e[24m"
+  - delay: 135
+    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1mIs editable?\e[22m \e[90m…\e[39m no \e[90m/\e[39m \e[36m\e[4myes\e[39m\e[24m\r\n\e[?25h\e[?25l\e[2K\e[1G\e[36m?\e[39m \e[1mIs movable?\e[22m \e[90m›\e[39m no \e[90m/\e[39m \e[36m\e[4myes\e[39m\e[24m"
+  - delay: 377
+    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1mIs movable?\e[22m \e[90m…\e[39m no \e[90m/\e[39m \e[36m\e[4myes\e[39m\e[24m\r\n\e[?25h"
+  - delay: 18
+    content: "\e[1;32mNode './src/nodes/Parent/Child1.ts' has been created.\e[0m\r\n$ "
+  - delay: 591
+    content: cognigy-hammer create node
+  - delay: 640
+    content: "\r\n\e[?2004l\r"
+  - delay: 67
+    content: "\e[2K\e[1G\e[36m?\e[39m \e[1mInput node name\e[22m \e[90m›\e[39m \e7\e8"
+  - delay: 575
+    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1mInput node name\e[22m \e[90m›\e[39m C\e7\e8"
+  - delay: 183
+    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1mInput node name\e[22m \e[90m›\e[39m Ch\e7\e8"
+  - delay: 777
+    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1mInput node name\e[22m \e[90m›\e[39m Chi\e7\e8"
+  - delay: 215
+    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1mInput node name\e[22m \e[90m›\e[39m Chil\e7\e8"
+  - delay: 88
+    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1mInput node name\e[22m \e[90m›\e[39m Child\e7\e8"
+  - delay: 849
+    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1mInput node name\e[22m \e[90m›\e[39m Child2\e7\e8"
+  - delay: 873
+    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1mInput node name\e[22m \e[90m…\e[39m Child2\e7\e8\r\n\e[?25h\e[?25l\e[2K\e[1G\e[36m?\e[39m \e[1mDoes node have parent?\e[22m \e[90m›\e[39m \e[36m\e[4mno\e[39m\e[24m \e[90m/\e[39m yes"
+  - delay: 1461
+    content: "\e[2K\e[G\e[2K\e[1G\e[36m?\e[39m \e[1mDoes node have parent?\e[22m \e[90m›\e[39m no \e[90m/\e[39m \e[36m\e[4myes\e[39m\e[24m"
+  - delay: 248
+    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1mDoes node have parent?\e[22m \e[90m…\e[39m no \e[90m/\e[39m \e[36m\e[4myes\e[39m\e[24m\r\n\e[?25h\e[?25l\e[36m?\e[39m \e[1mPick a parent node\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent\e[39m\e[24m\e[90m\e[39m\r\n    Parent2\e[90m\e[39m\r\n    Parent/Child1\e[90m\e[39m\r\n"
+  - delay: 540
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[36m?\e[39m \e[1mPick a parent node\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n    Parent\e[90m\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent2\e[39m\e[24m\e[90m\e[39m\r\n    Parent/Child1\e[90m\e[39m\r\n"
+  - delay: 128
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[36m?\e[39m \e[1mPick a parent node\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n    Parent\e[90m\e[39m\r\n    Parent2\e[90m\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent/Child1\e[39m\e[24m\e[90m\e[39m\r\n"
+  - delay: 248
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[36m?\e[39m \e[1mPick a parent node\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n    Parent\e[90m\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent2\e[39m\e[24m\e[90m\e[39m\r\n    Parent/Child1\e[90m\e[39m\r\n"
   - delay: 120
-    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[36m?\e[39m \e[1mPick a parent node\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n    Parent\e[90m\e[39m\r\n    Parent2\e[90m\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent/Child1\e[39m\e[24m\e[90m\e[39m\r\n    Parent/Child1/Child2\e[90m\e[39m\r\n    Parent/Child1/Child2/Child3\e[90m\e[39m\r\n"
-  - delay: 120
-    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[36m?\e[39m \e[1mPick a parent node\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n    Parent\e[90m\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent2\e[39m\e[24m\e[90m\e[39m\r\n    Parent/Child1\e[90m\e[39m\r\n    Parent/Child1/Child2\e[90m\e[39m\r\n    Parent/Child1/Child2/Child3\e[90m\e[39m\r\n"
-  - delay: 832
-    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m✔\e[39m \e[1mPick a parent node\e[22m \e[90m›\e[39m Parent2\r\n\e[?25h"
-  - delay: 14
-    content: "\e[1;32mNode './src/nodes/Parent2/ChildN.ts' has been created."
-  - delay: 1399
-    content: "\r\n"
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[36m?\e[39m \e[1mPick a parent node\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent\e[39m\e[24m\e[90m\e[39m\r\n    Parent2\e[90m\e[39m\r\n    Parent/Child1\e[90m\e[39m\r\n"
+  - delay: 240
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[36m?\e[39m \e[1mPick a parent node\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n    Parent\e[90m\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent2\e[39m\e[24m\e[90m\e[39m\r\n    Parent/Child1\e[90m\e[39m\r\n"
+  - delay: 129
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[36m?\e[39m \e[1mPick a parent node\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n    Parent\e[90m\e[39m\r\n    Parent2\e[90m\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mParent/Child1\e[39m\e[24m\e[90m\e[39m\r\n"
+  - delay: 568
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m✔\e[39m \e[1mPick a parent node\e[22m \e[90m›\e[39m Parent/Child1\r\n\e[?25h\e[?25l\e[36m?\e[39m \e[1mNode variant\e[22m \e[90m›\e[39m \e[90m- Use arrow-keys. Return to submit.\e[39m\r\n    regular\e[90m\e[39m\r\n\e[36m❯\e[39m   \e[36m\e[4mmini\e[39m\e[24m\e[90m\e[39m\r\n    hexagon\e[90m\e[39m\r\n"
+  - delay: 1150
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m✔\e[39m \e[1mNode variant\e[22m \e[90m›\e[39m mini\r\n\e[?25h\e[2K\e[1G\e[36m?\e[39m \e[1mNode color. Can be hex or word.\e[22m \e[90m›\e[39m \e[90mgreen\e[39m\e7\e8"
+  - delay: 432
+    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1mNode color. Can be hex or word.\e[22m \e[90m…\e[39m green\e7\e8\r\n\e[?25h\e[2K\e[1G\e[36m?\e[39m \e[1mText color. Can be hex or word.\e[22m \e[90m›\e[39m \e[90mwhite\e[39m\e7\e8"
+  - delay: 152
+    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1mText color. Can be hex or word.\e[22m \e[90m…\e[39m white\e7\e8\r\n\e[?25h\e[?25l\e[2K\e[1G\e[36m?\e[39m \e[1mIs collapsable?\e[22m \e[90m›\e[39m no \e[90m/\e[39m \e[36m\e[4myes\e[39m\e[24m"
+  - delay: 143
+    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1mIs collapsable?\e[22m \e[90m…\e[39m no \e[90m/\e[39m \e[36m\e[4myes\e[39m\e[24m\r\n\e[?25h\e[?25l\e[2K\e[1G\e[36m?\e[39m \e[1mIs creatable?\e[22m \e[90m›\e[39m \e[36m\e[4mno\e[39m\e[24m \e[90m/\e[39m yes"
+  - delay: 151
+    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1mIs creatable?\e[22m \e[90m…\e[39m \e[36m\e[4mno\e[39m\e[24m \e[90m/\e[39m yes\r\n\e[?25h\e[?25l\e[2K\e[1G\e[36m?\e[39m \e[1mIs deleteable?\e[22m \e[90m›\e[39m \e[36m\e[4mno\e[39m\e[24m \e[90m/\e[39m yes"
+  - delay: 142
+    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1mIs deleteable?\e[22m \e[90m…\e[39m \e[36m\e[4mno\e[39m\e[24m \e[90m/\e[39m yes\r\n\e[?25h\e[?25l\e[2K\e[1G\e[36m?\e[39m \e[1mIs editable?\e[22m \e[90m›\e[39m no \e[90m/\e[39m \e[36m\e[4myes\e[39m\e[24m"
+  - delay: 129
+    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1mIs editable?\e[22m \e[90m…\e[39m no \e[90m/\e[39m \e[36m\e[4myes\e[39m\e[24m\r\n\e[?25h\e[?25l\e[2K\e[1G\e[36m?\e[39m \e[1mIs movable?\e[22m \e[90m›\e[39m no \e[90m/\e[39m \e[36m\e[4myes\e[39m\e[24m"
+  - delay: 128
+    content: "\e[2K\e[G\e[2K\e[1G\e[32m✔\e[39m \e[1mIs movable?\e[22m \e[90m…\e[39m no \e[90m/\e[39m \e[36m\e[4myes\e[39m\e[24m\r\n\e[?25h"
+  - delay: 16
+    content: "\e[1;32mNode './src/nodes/Parent/Child1/Child2.ts' has been created.\e[0m\r\n$ "
+  - delay: 109
+    content: "\r\n\e[?2004l\r$ "
+  - delay: 1214
+    content: c
+  - delay: 136
+    content: o
+  - delay: 170
+    content: g
+  - delay: 70
+    content: 'n'
+  - delay: 153
+    content: i
+  - delay: 80
+    content: g
+  - delay: 137
+    content: 'y'
+  - delay: 280
+    content: '-'
+  - delay: 200
+    content: h
+  - delay: 127
+    content: a
+  - delay: 95
+    content: m
+  - delay: 104
+    content: m
+  - delay: 79
+    content: e
+  - delay: 48
+    content: r
+  - delay: 107
+    content: ' '
+  - delay: 85
+    content: l
+  - delay: 169
+    content: i
+  - delay: 71
+    content: s
+  - delay: 103
+    content: t
+  - delay: 80
+    content: ' '
+  - delay: 203
+    content: 'n'
+  - delay: 175
+    content: o
+  - delay: 175
+    content: d
+  - delay: 143
+    content: e
+  - delay: 697
+    content: s
+  - delay: 424
+    content: "\r\n\e[?2004l\r"
+  - delay: 60
+    content: "[ \e[32m'Parent'\e[39m, \e[32m'Parent2'\e[39m, \e[32m'Parent/Child1'\e[39m, \e[32m'Parent/Child1/Child2'\e[39m ]\r\n"
+  - delay: 5
+    content: "$ "
+  - delay: 2503
+    content: "\e[?2004l\r\r\nlogout\r\n"
