@@ -45,8 +45,17 @@ export const createConnection = async () => {
 
 type TNodeTemplate = {
   NODE_TYPE: INodeDescriptor["type"],
+
+  NODE_CONSTRAINT_COLLAPSABLE: INodeConstraints["collapsable"],
   NODE_CONSTRAINT_CREATEABLE: INodeConstraints["creatable"],
+  NODE_CONSTRAINT_DELETABLE: INodeConstraints["deletable"],
+  NODE_CONSTRAINT_EDITABLE: INodeConstraints["editable"],
+  NODE_CONSTRAINT_MOVABLE: INodeConstraints["movable"],
+  
+  NODE_APPEARANCE_COLOR: INodeAppearance["color"],
+  NODE_APPEARANCE_TEXT_COLOR: INodeAppearance["textColor"],
   NODE_APPEARANCE_VARIANT: INodeAppearance["variant"],
+
   isChildNode?: boolean
 }
 
@@ -73,9 +82,13 @@ export const createNode = async () => {
       type: 'text',
       name: 'nodeName', 
       message: "Input node name",
-      validate: t => {
+      validate: (t: string) => {
         if(!t) {
           return 'Input string'
+        }
+
+        if(t.includes('/') || t.includes('\\')) {
+          return 'Namespacing is not supported'
         }
 
         return true;
@@ -92,9 +105,8 @@ export const createNode = async () => {
       inactive: 'no',
     }, { onCancel: () => process.exit() });
 
+    let parentNode = '';
     if(nodeHasParent) {
-      const nodeNameNaked = basename(nodeName);
-
       const availableNodes = scanDirForFiles('./src/nodes')
           .filter(p => fileIsNode(p))
           .map(p => p.replace(/.+\/nodes\//, ''))
@@ -107,47 +119,137 @@ export const createNode = async () => {
         message: "Pick a parent node",
       }, { onCancel: () => process.exit() });
 
-      const parentNode = availableNodes[parentNodeIndex];
+      parentNode = availableNodes[parentNodeIndex];
 
+      if(nodeExists(`${parentNode}/${nodeName}`)) {
+        console.log(cc.set('fg_red', `Node '${nodeName}' already exists as child for '${parentNode}' !`));
+        return createNode();
+      }
+    } else if(nodeExists(nodeName)) {
+      console.log(cc.set('fg_red', `Node ${nodeName} already exists!`));
+      return createNode();
+    }
+
+    const { 
+      NODE_APPEARANCE_COLOR, 
+      NODE_APPEARANCE_TEXT_COLOR,
+      NODE_APPEARANCE_VARIANT,
+      NODE_CONSTRAINT_COLLAPSABLE,
+      NODE_CONSTRAINT_CREATEABLE,
+      NODE_CONSTRAINT_DELETABLE,
+      NODE_CONSTRAINT_EDITABLE,
+      NODE_CONSTRAINT_MOVABLE
+    } = await prompts([
+      {
+        type: 'select',
+        name: 'NODE_APPEARANCE_VARIANT',
+        message: 'Node variant',
+        initial: nodeHasParent ? 1: 0,
+        choices: [
+          {
+            value: 'regular',
+            title: 'regular',
+          },
+          {
+            value: 'mini',
+            title: 'mini'
+          },
+          {
+            value: 'hexagon',
+            title: 'hexagon'
+          }
+        ]
+      },
+      {
+        type: 'text',
+        name: 'NODE_APPEARANCE_COLOR',
+        message: 'Node color. Can be hex or word.',
+        initial: nodeHasParent ? 'green' : 'white',
+        active: 'yes',
+        inactive: 'no',
+      },
+      {
+        type: 'text',
+        name: 'NODE_APPEARANCE_TEXT_COLOR',
+        message: 'Text color. Can be hex or word.',
+        initial: nodeHasParent ? 'white' : 'black',
+        active: 'yes',
+        inactive: 'no',
+      },
+      {
+        type: 'toggle',
+        name: 'NODE_CONSTRAINT_COLLAPSABLE',
+        message: 'Is collapsable?',
+        initial: true,
+        active: 'yes',
+        inactive: 'no',
+      },
+      {
+        type: 'toggle',
+        name: 'NODE_CONSTRAINT_CREATEABLE',
+        message: 'Is creatable?',
+        initial: nodeHasParent ? false : true,
+        active: 'yes',
+        inactive: 'no',
+      },
+      {
+        type: 'toggle',
+        name: 'NODE_CONSTRAINT_DELETABLE',
+        message: 'Is deleteable?',
+        initial: nodeHasParent ? false : true,
+        active: 'yes',
+        inactive: 'no',
+      },
+      {
+        type: 'toggle',
+        name: 'NODE_CONSTRAINT_EDITABLE',
+        message: 'Is editable?',
+        initial: true,
+        active: 'yes',
+        inactive: 'no',
+      },
+      {
+        type: 'toggle',
+        name: 'NODE_CONSTRAINT_MOVABLE',
+        message: 'Is movable?',
+        initial: true,
+        active: 'yes',
+        inactive: 'no',
+      },
+    ], { onCancel: () => process.exit() });
+
+    // create child node
+    const finalNodeSourceCode = nodeTemplate({ 
+      NODE_TYPE: nodeName,
+      NODE_CONSTRAINT_CREATEABLE,
+      NODE_APPEARANCE_VARIANT,
+      NODE_APPEARANCE_COLOR,
+      NODE_APPEARANCE_TEXT_COLOR,
+      NODE_CONSTRAINT_COLLAPSABLE,
+      NODE_CONSTRAINT_DELETABLE,
+      NODE_CONSTRAINT_EDITABLE,
+      NODE_CONSTRAINT_MOVABLE,
+      isChildNode: nodeHasParent
+    });
+
+    if(nodeHasParent) {
       // create dir with parent node if not already exists
       const tPath = `./src/nodes/${parentNode}`;
       if(!existsSync(tPath) || !statSync(tPath).isDirectory()) {
         mkdirSync(tPath);
       }
 
-      if(nodeExists(`${parentNode}/${nodeNameNaked}`)) {
-        console.log(cc.set('fg_red', `Node '${nodeNameNaked}' already exists as child for '${parentNode}' !`));
-        process.exit(1);
-      }
+      // write actual node to disk
+      writeFileSync(`${tPath}/${nodeName}.ts`, finalNodeSourceCode);
 
-      // create child node
-      const finalNodeSourceCode = nodeTemplate({ 
-        NODE_TYPE: nodeNameNaked,
-        NODE_CONSTRAINT_CREATEABLE: false,
-        NODE_APPEARANCE_VARIANT: 'mini',
-        isChildNode: true
-      });
-      writeFileSync(`${tPath}/${nodeNameNaked}.ts`, finalNodeSourceCode);
-      console.log(cc.set('fg_green', `Node '${tPath}/${nodeNameNaked}.ts' has been created.`));
+      console.log(cc.set('fg_green', `Node '${tPath}/${nodeName}.ts' has been created.`));
 
       process.exit();
     }
 
-    if(nodeExists(nodeName)) {
-      console.log(cc.set('fg_red', `Node ${nodeName} already exists!`));
-      process.exit(1);
-    }
-
-    const finalNodeSourceCode = nodeTemplate({ 
-      NODE_TYPE: nodeName,
-      NODE_APPEARANCE_VARIANT: 'regular',
-      NODE_CONSTRAINT_CREATEABLE: true,
-    });
-
     const targetPath = `./src/nodes/${nodeName}.ts`;
-    try {
-      mkdirSync(dirname(targetPath), { recursive: true });
-    } catch(_) {}
+    
+    // write actual node to disk
     writeFileSync(targetPath, finalNodeSourceCode);
 
     console.log(cc.set('fg_green', `Node ${nodeName} has been created.`))

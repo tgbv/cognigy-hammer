@@ -10,16 +10,16 @@ descriptor.summary = '{{ NODE_TYPE }} summary';
 
 descriptor.constraints = {
   placement: {},
-  collapsable: true,
+  collapsable: {{ NODE_CONSTRAINT_COLLAPSABLE }},
   creatable: {{ NODE_CONSTRAINT_CREATEABLE }},
-  deletable: true,
-  editable: true,
-  movable: true,
+  deletable: {{ NODE_CONSTRAINT_DELETABLE }},
+  editable: {{ NODE_CONSTRAINT_EDITABLE }},
+  movable: {{ NODE_CONSTRAINT_MOVABLE }},
 };
 
 descriptor.appearance = {
-  color: "#61d188",
-  textColor: "black",
+  color: "{{ NODE_APPEARANCE_COLOR }}",
+  textColor: "{{ NODE_APPEARANCE_TEXT_COLOR }}",
   variant: "{{ NODE_APPEARANCE_VARIANT }}"
 }
 
