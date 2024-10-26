@@ -3,7 +3,8 @@
 import { Argument, Command } from "commander";
 import { readFileSync } from "fs";
 import { createConnection, createNode, createScaffold } from "./com/create";
-import { deleteNode } from "./com/delete";
+import { deleteConnection, deleteNode } from "./com/delete";
+import { listConnections, listNodes } from "./com/list";
 
 const packageJson = JSON.parse(readFileSync(`${__dirname}/../../package.json`).toString());
 
@@ -16,6 +17,18 @@ program
 
 const entityArg = new Argument('<entity>', 'Entity type.')
   .choices(['connection', 'conn', 'node', 'scaffold', 'project']);
+
+program
+  .command('list')
+  .description('List entities based on their entity.')
+  .addArgument(new Argument('<entity>', 'Entity type.').choices(['connections', 'conns', 'nodes']))
+  .action((entity: string) => {
+    switch(entity) {
+      case 'nodes': return listNodes();
+      case 'connections': 
+      case 'conns': return listConnections();
+    }
+  });
 
 program
   .command('create')
@@ -40,6 +53,8 @@ program
   .action((entity: string) => {
     switch(entity) {
       case 'node': return deleteNode();
+      case 'connection': 
+      case 'conn': return deleteConnection();
     }
   });
 
