@@ -49,7 +49,10 @@ function recursivelyMapNodesForExtensionMap(
                     .sort((a, b) => a.path.length > b.path.length ? 1 : 0);
 
   for (const n of entities) {
-    const nodeType = `${n.path}/${n.name}`.replace(/.+\/nodes\//, '').replace(/\.[a-z]+$/, '');
+    const nodeType = `${n.path}/${n.name}`
+      .replace(/\\/g, '/')
+      .replace(/.+\/nodes\//, '')
+      .replace(/\.[a-z]+$/, '');
 
     if(n.isFile() && fileIsNode(resolve(n.path, n.name))) {
       nodesMap[nodeType] = {
@@ -80,6 +83,7 @@ function generateExtensionMap(rootPath: string = require.main?.path || ''): void
 
   //   return type && label && fields;
   // })
+  .map(p => p.replace(/\\/g, '/'))
   .map(p => p.replace(/.+\/connections\//, ''))
   .map(p => p.replace(/\.[a-z]+$/, ''));
 
@@ -182,7 +186,7 @@ export function setNextNode(options: ISetNextNodeFuncParams, targetNode?: INodeD
 function injectDescriptorDependencies(nodeDescriptor: IHammerNodeDescriptor): void {
 
   // subtract nodeType
-  const match = nodeDescriptor.nodePath.match(/nodes\/([\s\S]+)\./)
+  const match = nodeDescriptor.nodePath.match(/nodes\/([\s\S]+)\./) || nodeDescriptor.nodePath.match(/nodes\\([\s\S]+)\./)
   const nodeType = (match && match[1]) ? match[1] : false;
   if(!nodeType) {
     throw new Error(`Could not detect nodeType from descriptor: ${JSON.stringify(nodeDescriptor)}`);

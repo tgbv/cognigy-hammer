@@ -110,6 +110,7 @@ export const createNode = async () => {
       const availableNodes = scanDirForFiles('./src/nodes')
           .filter(p => fileIsNode(p))
           .map(p => p.replace(/.+\/nodes\//, ''))
+          .map(p => p.replace(/.+\\nodes\\/, ''))
           .map(p => p.replace(/\.[a-z]+$/, ''));
 
       const { parentNodeIndex } = await prompts({
@@ -378,18 +379,36 @@ export const createScaffold = async () => {
     )
 
     if(INIT_REPO) {
-      await new Promise<void>((accept) => spawn('git', ['init', '.'], {
+      await new Promise<void>((accept, reject) => spawn('git', ['init', '.'], {
         cwd: WRITE_PATH,
         detached: true,
         stdio: "inherit"
-      }).on("exit", () => accept()));
+      })
+      .on("exit", () => accept())
+      .on('error', (e) => {
+        if(e.message.includes('ENOENT')) {
+          console.log(cc.set('fg_yellow', `warn: Could not find 'git' at $PATH. Please initialize repository manually.`))
+          accept();
+        } else {
+          reject(e);
+        }
+      }));
     }
 
-    await new Promise<void>((accept) => spawn('npm', ['i'], {
+    await new Promise<void>((accept, reject) => spawn('npm', ['i'], {
       cwd: WRITE_PATH,
       detached: true,
       stdio: "inherit"
-    }).on("exit", () => accept()));
+    })
+    .on("exit", () => accept())
+    .on('error', (e) => {
+      if(e.message.includes('ENOENT')) {
+        console.log(cc.set('fg_yellow', `warn: Could not find 'npm' at $PATH. Please install package dependencies manually.`))
+        accept();
+      } else {
+        reject(e);
+      }
+    }));
 
     console.log(cc.set('fg_green', `info: Done!`));
 

@@ -19,6 +19,7 @@ export const deleteNode = async () => {
   
     const nonDirtyAvailableNodes = availableNodes        
       .map(p => p.replace(/.+\/nodes\//, ''))
+      .map(p => p.replace(/.+\\nodes\\/, ''))
       .map(p => p.replace(/\.[a-z]+$/, ''));
   
     const { index } = await prompts({
@@ -65,6 +66,7 @@ export const deleteConnection = async () => {
   
     const nonDirtyAvailableConns = availableConns        
       .map(p => p.replace(/.+\/connections\//, ''))
+      .map(p => p.replace(/.+\\connections\\/, ''))
       .map(p => p.replace(/\.[a-z]+$/, ''));
   
     const { index } = await prompts({
