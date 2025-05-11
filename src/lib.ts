@@ -39,8 +39,8 @@ export function fileIsNode(targetPath: string): boolean {
  * @returns boolean
  */
 export function cwdIsInExtensionProject(): boolean {
-  return existsSync('./package.json') && 
-    JSON.parse(readFileSync('./package.json').toString()).isCognigyExtension
+  return (existsSync('./package.json') && 
+    JSON.parse(readFileSync('./package.json').toString()).isCognigyExtension) ?? false;
 }
 
 /**

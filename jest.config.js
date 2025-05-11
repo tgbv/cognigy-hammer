@@ -4,6 +4,6 @@ module.exports = {
   testEnvironment: 'node',
   modulePathIgnorePatterns: ['.json'],
   testMatch: [
-    './src/**/*.test.ts'
+    '**/src/**/*.test.ts'
   ]
 };
