@@ -245,7 +245,7 @@ export const createNode = async () => {
 
       console.log(cc.set('fg_green', `Node '${tPath}/${nodeName}.ts' has been created.`));
 
-      process.exit();
+      return process.exit();
     }
 
     const targetPath = `./src/nodes/${nodeName}.ts`;
@@ -291,7 +291,7 @@ export const createScaffold = async () => {
     
       if(!result.overwrite) {
         console.log(cc.set('fg_green', `info: Skipped location ${WRITE_PATH}`));
-        process.exit(0);
+        return process.exit(0);
       }
     }
 
@@ -398,7 +398,8 @@ export const createScaffold = async () => {
     await new Promise<void>((accept, reject) => spawn('npm', ['i'], {
       cwd: WRITE_PATH,
       detached: true,
-      stdio: "inherit"
+      stdio: "inherit",
+      shell: true
     })
     .on("exit", () => accept())
     .on('error', (e) => {
