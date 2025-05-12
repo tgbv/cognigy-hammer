@@ -22,7 +22,8 @@
     "cli"
   ],
   "files": [
-    "build",
+    "build/**/*.js",
+    "build/**/*.ts",
     "templates",
     "package-lock.json",
     "package.json",

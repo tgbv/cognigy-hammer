@@ -7,7 +7,7 @@
 		"module": "CommonJS",
 		"rootDir": "src",
 		"outDir": "build",
-		"sourceMap": false,
+		"sourceMap": true,
 		"moduleResolution": "node",
 		"strictNullChecks": true,
 		"esModuleInterop": true,
